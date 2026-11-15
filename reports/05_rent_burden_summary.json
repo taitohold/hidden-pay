@@ -1,0 +1,27 @@
+{
+  "definition": "rent-burdened = 12 x monthly rent > 30% of gross annual pay (gross, not take-home)",
+  "rent_measure": "median asking rent, studio/1BR, by city; fallbacks: city rentZestimate, county median",
+  "cities_in_rent_table": 201,
+  "rent_source_counts": {
+    "county median": 140,
+    "city asking rent": 61
+  },
+  "hidden_pay_bay_area": {
+    "n": 6986,
+    "median_predicted_pay": 116508,
+    "burdened_city_1br": 0.547,
+    "burdened_county_1br": 0.5415,
+    "burdened_city_2br": 0.7834
+  },
+  "shown_pay_bay_area_actual_salary": {
+    "n": 38700,
+    "median_actual_pay": 122195,
+    "burdened_city_1br": 0.4999
+  },
+  "model_check_on_test_postings_with_salary": {
+    "n": 5419,
+    "burdened_using_actual_pay": 0.5241,
+    "burdened_using_predicted_pay": 0.5424,
+    "agreement_per_posting": 0.8847
+  }
+}

@@ -1,0 +1,202 @@
+city,county,rent,rent_source,n_listings_used,rent_county,rent_2br,pay_needed,postings,hidden_pay_postings
+San Francisco,San Francisco County,3500.0,city asking rent,5228,3500.0,5332.0,140000.0,11862.0,2197.0
+San Jose,Santa Clara County,3010.0,city asking rent,5902,3175.0,3639.5,120400.0,5733.0,961.0
+Santa Clara,Santa Clara County,3540.0,city asking rent,2028,3175.0,4481.0,141600.0,2704.0,408.0
+Sunnyvale,Santa Clara County,3270.5,city asking rent,1720,3175.0,4041.5,130820.0,1732.0,230.0
+Palo Alto,Santa Clara County,3075.0,city asking rent,187,3175.0,3800.0,123000.0,1647.0,291.0
+Oakland,Alameda County,2295.0,city asking rent,4350,2415.0,3126.5,91800.0,1523.0,202.0
+Mountain View,Santa Clara County,3972.0,city asking rent,1357,3175.0,5289.0,158880.0,1498.0,136.0
+Fremont,Alameda County,2608.0,city asking rent,1813,2415.0,3318.5,104320.0,1156.0,201.0
+San Mateo,San Mateo County,3307.0,city asking rent,905,3379.0,4227.5,132280.0,891.0,105.0
+Cupertino,Santa Clara County,3265.5,city asking rent,352,3175.0,4123.0,130620.0,860.0,42.0
+Santa Rosa,Sonoma County,2290.0,city asking rent,780,2301.0,2674.0,91600.0,793.0,60.0
+Walnut Creek,Contra Costa County,2495.0,city asking rent,1205,2224.0,2922.5,99800.0,605.0,93.0
+Concord,Contra Costa County,1950.0,city asking rent,485,2224.0,2490.0,78000.0,605.0,70.0
+Menlo Park,San Mateo County,3727.0,city asking rent,329,3379.0,5590.0,149080.0,599.0,74.0
+Redwood City,San Mateo County,3621.0,city asking rent,693,3379.0,4765.0,144840.0,585.0,101.0
+Hayward,Alameda County,2200.0,city asking rent,774,2415.0,2716.0,88000.0,569.0,71.0
+Foster City,San Mateo County,3447.0,city asking rent,391,3379.0,4119.0,137880.0,539.0,54.0
+Pleasanton,Alameda County,2496.0,city asking rent,298,2415.0,3078.0,99840.0,517.0,101.0
+Berkeley,Alameda County,2450.0,city asking rent,1577,2415.0,3295.0,98000.0,476.0,66.0
+Milpitas,Santa Clara County,2992.0,city asking rent,409,3175.0,3535.0,119680.0,470.0,100.0
+Napa,Napa County,2341.0,city asking rent,313,2313.0,2742.0,93640.0,468.0,67.0
+Alameda,Alameda County,2859.0,city asking rent,490,2415.0,2997.5,114360.0,432.0,58.0
+South San Francisco,San Mateo County,3516.5,city asking rent,290,3379.0,4527.0,140660.0,411.0,46.0
+Fairfield,Solano County,2099.0,city asking rent,383,2025.0,2332.0,83960.0,394.0,41.0
+Livermore,Alameda County,2384.5,city asking rent,188,2415.0,2745.0,95380.0,374.0,63.0
+San Leandro,Alameda County,2145.0,city asking rent,392,2415.0,2499.0,85800.0,349.0,50.0
+San Rafael,Marin County,2565.5,city asking rent,200,2720.0,3300.0,102620.0,325.0,50.0
+San Ramon,Contra Costa County,2427.0,city asking rent,185,2224.0,2907.0,97080.0,289.0,39.0
+Vallejo,Solano County,1800.0,city asking rent,243,2025.0,2195.0,72000.0,269.0,46.0
+Burlingame,San Mateo County,3826.0,city asking rent,454,3379.0,5462.0,153040.0,267.0,37.0
+Vacaville,Solano County,2150.5,city asking rent,414,2025.0,2506.0,86020.0,254.0,31.0
+Petaluma,Sonoma County,2496.0,city asking rent,295,2301.0,2892.5,99840.0,247.0,21.0
+Tracy,Alameda County,2415.0,county median,0,2415.0,3077.0,96600.0,235.0,36.0
+San Carlos,San Mateo County,4076.5,city asking rent,36,3379.0,5175.0,163060.0,230.0,38.0
+Richmond,Contra Costa County,2196.0,city asking rent,198,2224.0,2819.0,87840.0,227.0,23.0
+Dublin,Alameda County,2625.0,city asking rent,530,2415.0,3172.0,105000.0,222.0,24.0
+Los Gatos,Santa Clara County,3324.0,city asking rent,65,3175.0,4159.0,132960.0,219.0,30.0
+Davis,Solano County,2025.0,county median,0,2025.0,2356.0,81000.0,206.0,22.0
+Daly City,San Mateo County,2564.5,city asking rent,364,3379.0,3389.5,102580.0,201.0,17.0
+Campbell,Santa Clara County,2788.5,city asking rent,332,3175.0,3397.5,111540.0,200.0,38.0
+Newark,Alameda County,2681.0,city asking rent,39,2415.0,3200.0,107240.0,199.0,21.0
+Novato,Marin County,2972.5,city asking rent,32,2720.0,3112.0,118900.0,192.0,24.0
+Antioch,Contra Costa County,1915.0,city asking rent,224,2224.0,2100.0,76600.0,191.0,28.0
+San Bruno,San Mateo County,3071.5,city asking rent,180,3379.0,4017.0,122860.0,185.0,14.0
+Sonoma,Sonoma County,2301.0,county median,0,2301.0,2995.0,92040.0,171.0,30.0
+Brentwood,Contra Costa County,2499.5,city asking rent,42,2224.0,2925.0,99980.0,168.0,27.0
+Emeryville,Alameda County,2873.5,city asking rent,288,2415.0,4040.0,114940.0,167.0,28.0
+Union City,Alameda County,2295.0,city asking rent,176,2415.0,2700.0,91800.0,165.0,20.0
+Morgan Hill,Santa Clara County,3065.0,city asking rent,75,3175.0,3684.0,122600.0,159.0,25.0
+Gilroy,Santa Clara County,3175.0,county median,0,3175.0,2695.0,127000.0,157.0,14.0
+Pittsburg,Contra Costa County,1965.0,city asking rent,283,2224.0,2357.0,78600.0,138.0,26.0
+Rohnert Park,Sonoma County,2096.5,city asking rent,286,2301.0,2425.0,83860.0,136.0,27.0
+Martinez,Contra Costa County,2078.5,city asking rent,80,2224.0,2399.0,83140.0,130.0,15.0
+Brisbane,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,121.0,22.0
+Pleasant Hill,Contra Costa County,2271.5,city asking rent,232,2224.0,2849.0,90860.0,118.0,10.0
+Lathrop,Alameda County,2415.0,county median,0,2415.0,3077.0,96600.0,102.0,17.0
+Stanford,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,101.0,25.0
+Danville,Contra Costa County,2926.0,city asking rent,30,2224.0,3137.5,117040.0,89.0,9.0
+Saratoga,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,86.0,8.0
+Los Altos,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,85.0,23.0
+Castro Valley,Alameda County,2145.0,city asking rent,49,2415.0,2614.0,85800.0,76.0,8.0
+Benicia,Solano County,2192.5,city asking rent,70,2025.0,2630.0,87700.0,76.0,9.0
+Belmont,San Mateo County,3114.0,city asking rent,320,3379.0,3778.0,124560.0,76.0,16.0
+Healdsburg,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,73.0,2.0
+Lafayette,Contra Costa County,2224.0,county median,0,2224.0,3456.0,88960.0,70.0,17.0
+East Palo Alto,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,64.0,3.0
+Saint Helena,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,61.0,4.0
+Sebastopol,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,60.0,8.0
+Greenbrae,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,60.0,3.0
+Windsor,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,58.0,12.0
+San Pablo,Contra Costa County,1995.0,city asking rent,41,2224.0,2290.0,79800.0,56.0,11.0
+Mill Valley,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,56.0,5.0
+Corte Madera,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,56.0,2.0
+Pinole,Contra Costa County,2224.0,county median,0,2224.0,2390.0,88960.0,54.0,3.0
+Millbrae,San Mateo County,3189.0,city asking rent,32,3379.0,4376.0,127560.0,53.0,8.0
+El Cerrito,Contra Costa County,2351.0,city asking rent,58,2224.0,2595.0,94040.0,49.0,3.0
+Dixon,Solano County,2025.0,county median,0,2025.0,2973.5,81000.0,46.0,8.0
+Half Moon Bay,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,42.0,4.0
+Colma,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,41.0,3.0
+Yountville,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,41.0,3.0
+Calistoga,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,40.0,5.0
+Oakley,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,37.0,7.0
+Sausalito,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,36.0,5.0
+Hercules,Contra Costa County,2615.0,city asking rent,52,2224.0,3665.0,104600.0,35.0,1.0
+American Canyon,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,35.0,4.0
+Larkspur,Marin County,3195.0,city asking rent,63,2720.0,4090.0,127800.0,32.0,3.0
+Pacifica,San Mateo County,3379.0,county median,0,3379.0,3740.0,135160.0,28.0,3.0
+Atherton,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,28.0,1.0
+Suisun City,Solano County,2025.0,city asking rent,62,2025.0,2161.0,81000.0,28.0,6.0
+Cotati,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,25.0,3.0
+Orinda,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,22.0,4.0
+Bay Point,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,22.0,1.0
+Albany,Alameda County,2415.0,county median,0,2415.0,3077.0,96600.0,21.0,4.0
+Tiburon,Marin County,2720.0,county median,0,2720.0,5800.0,108800.0,20.0,2.0
+Piedmont,Alameda County,2415.0,county median,0,2415.0,3077.0,96600.0,18.0,3.0
+Moraga,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,18.0,3.0
+San Lorenzo,Alameda County,2010.0,city asking rent,32,2415.0,2550.0,80400.0,17.0,4.0
+Kentfield,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,16.0,1.0
+Solvang,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,15.0,2.0
+Guerneville,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,15.0,0.0
+Rodeo,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,15.0,3.0
+El Sobrante,Contra Costa County,2224.0,county median,0,2224.0,2795.0,88960.0,13.0,1.0
+San Anselmo,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,13.0,2.0
+San Martin,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,13.0,0.0
+Cloverdale,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,12.0,2.0
+Winters,Solano County,2025.0,county median,0,2025.0,2356.0,81000.0,12.0,0.0
+Alamo,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,11.0,2.0
+Rio Vista,Solano County,2025.0,county median,0,2025.0,2356.0,81000.0,11.0,2.0
+Woodside,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,10.0,5.0
+Geyserville,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,9.0,1.0
+Discovery Bay,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,9.0,0.0
+Rutherford,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,9.0,2.0
+Glen Ellen,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,8.0,0.0
+Fairfax,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,8.0,0.0
+Mountain House,Alameda County,2415.0,county median,0,2415.0,3077.0,96600.0,8.0,3.0
+Angwin,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,8.0,4.0
+Crockett,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,7.0,1.0
+Portola Valley,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,7.0,0.0
+Hillsborough,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,7.0,0.0
+Occidental,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,7.0,1.0
+Pescadero,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,6.0,0.0
+Marshall,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,6.0,1.0
+Clayton,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,5.0,0.0
+Moss Beach,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,4.0,1.0
+Sunol,Alameda County,2415.0,county median,0,2415.0,3077.0,96600.0,4.0,0.0
+Forestville,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,4.0,1.0
+Alviso,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,3.0,0.0
+Kenwood,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,3.0,0.0
+Bodega Bay,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,3.0,0.0
+Point Reyes Station,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,3.0,0.0
+Belvedere Tiburon,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,3.0,1.0
+Deer Park,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,3.0,3.0
+Pacheco,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,3.0,0.0
+Mount Hamilton,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,2.0,0.0
+Loma Mar,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,1.0,0.0
+Nicasio,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,1.0,0.0
+Inverness,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,1.0,1.0
+Forest Knolls,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,1.0,0.0
+Fulton,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,1.0,0.0
+Woodacre,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,1.0,0.0
+Monte Rio,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,1.0,0.0
+Kensington,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,1.0,1.0
+Pope Valley,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,1.0,1.0
+Montara,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,1.0,0.0
+Penngrove,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,1.0,0.0
+Briones,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Sanmateo,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,0.0,0.0
+Walnutcreek,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Sanramon,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Boyes Hot Springs,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Sanjose,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,0.0,0.0
+Bolinas,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Tomales,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Valley Ford,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Bodega,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Sea Ranch,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+The Sea Ranch,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Annapolis,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Belvedere,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Bay Pt,Contra Costa County,2224.0,county median,0,2224.0,2065.0,88960.0,0.0,0.0
+Unincorporated,Solano County,2025.0,county median,0,2025.0,2356.0,81000.0,0.0,0.0
+Stinson Beach,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+San Quentin,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Bethel Island,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Jenner,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Byron,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Camp Meeker,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Muir Beach,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Mountainview,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,0.0,0.0
+Mountainhouse,Alameda County,2415.0,county median,0,2415.0,3077.0,96600.0,0.0,0.0
+El Verano,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Ellen,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Monte Sereno,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,0.0,0.0
+Eq4ar6 Saratoga,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,0.0,0.0
+Iorikj Windsor,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Losaltos,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,0.0,0.0
+Los Altos Hills,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,0.0,0.0
+Livermore Valley,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Lagunitas,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Graton,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+La Honda,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,0.0,0.0
+Knightsen,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+El Granada,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,0.0,0.0
+EastPaloAlto,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,0.0,0.0
+Old,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Rio Nido,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Canyon,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+San Gregorio,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,0.0,0.0
+San Geronimo,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Cazadero,Sonoma County,2301.0,county median,0,2301.0,2687.0,92040.0,0.0,0.0
+Helena,Napa County,2313.0,county median,0,2313.0,2745.0,92520.0,0.0,0.0
+Ross,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Pt Richmond,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Onondaga,Solano County,2025.0,county median,0,2025.0,2356.0,81000.0,0.0,0.0
+Pt Reyes Station,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Point Richmond,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Diablo,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0
+Dillon Beach,Marin County,2720.0,county median,0,2720.0,3605.0,108800.0,0.0,0.0
+Paloalto,Santa Clara County,3175.0,county median,0,3175.0,3848.0,127000.0,0.0,0.0
+Horse Creek,San Mateo County,3379.0,county median,0,3379.0,4376.0,135160.0,0.0,0.0
+Port Costa,Contra Costa County,2224.0,county median,0,2224.0,2675.5,88960.0,0.0,0.0

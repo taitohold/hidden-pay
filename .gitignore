@@ -1,0 +1,6 @@
+# data is large and not ours to redistribute
+/data/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

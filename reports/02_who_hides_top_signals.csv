@@ -1,0 +1,81 @@
+direction,feature,coefficient
+hides pay,desc: resume,2.997
+hides pay,desc: description,2.677
+hides pay,title: volunteer,2.279
+hides pay,desc: insurance schedule,1.893
+hides pay,desc: csu,1.873
+hides pay,desc: casino,1.704
+hides pay,desc: interested,1.702
+hides pay,desc: send,1.56
+hides pay,desc: com,1.545
+hides pay,desc: hour shift,1.527
+hides pay,desc: email resume,1.515
+hides pay,desc: fax,1.513
+hides pay,title: us,1.51
+hides pay,desc: amd,1.49
+hides pay,title: reserve,1.484
+hides pay,desc: schedule hour,1.472
+hides pay,title: u103,1.445
+hides pay,title: pt,1.401
+hides pay,desc: send resume,1.39
+hides pay,title: receptionist,1.371
+hides pay,desc: good,1.371
+hides pay,title: home health,1.364
+hides pay,title: talent,1.351
+hides pay,title: surgeon,1.342
+hides pay,desc: property description,1.338
+hides pay,desc: wendy,1.337
+hides pay,desc: property number,1.335
+hides pay,desc: guest,1.332
+hides pay,title: ae,1.33
+hides pay,desc: software,1.327
+hides pay,desc: looking,1.324
+hides pay,desc: submit,1.322
+hides pay,desc: letter,1.312
+hides pay,desc: email,1.306
+hides pay,title: administrative,1.303
+hides pay,desc: california state,1.299
+hides pay,desc: info,1.297
+hides pay,desc: mail,1.289
+hides pay,desc: state university,1.282
+hides pay,desc: doctors,1.28
+shows pay,desc: work location,-6.564
+shows pay,desc: location person,-6.177
+shows pay,desc: location,-4.337
+shows pay,desc: range,-4.28
+shows pay,desc: compensation,-4.09
+shows pay,desc: benefits,-3.95
+shows pay,desc: person,-3.787
+shows pay,desc: factors,-2.815
+shows pay,desc: role,-2.583
+shows pay,desc: paid,-2.552
+shows pay,desc: bonus,-2.451
+shows pay,desc: 401,-2.421
+shows pay,desc: insurance work,-2.398
+shows pay,desc: depending experience,-2.293
+shows pay,desc: benefits 401,-2.178
+shows pay,desc: usd,-2.172
+shows pay,desc: determined,-2.141
+shows pay,desc: depending,-2.093
+shows pay,desc: factors including,-2.05
+shows pay,desc: insurance,-2.016
+shows pay,desc: equity,-2.007
+shows pay,desc: rate,-1.978
+shows pay,desc: flexible schedule,-1.952
+shows pay,desc: based,-1.917
+shows pay,desc: eligible,-1.876
+shows pay,desc: dental,-1.853
+shows pay,desc: pay,-1.833
+shows pay,desc: range position,-1.771
+shows pay,desc: time work,-1.753
+shows pay,desc: vision insurance,-1.752
+shows pay,desc: hybrid,-1.744
+shows pay,desc: community,-1.721
+shows pay,desc: opportunity employer,-1.713
+shows pay,desc: opportunity,-1.696
+shows pay,desc: dental insurance,-1.661
+shows pay,desc: mission,-1.643
+shows pay,title: service sales,-1.639
+shows pay,desc: health insurance,-1.629
+shows pay,desc: employer,-1.625
+shows pay,desc: shifts,-1.608

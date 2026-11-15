@@ -1,0 +1,143 @@
+{
+  "target": "log(annual salary midpoint)",
+  "train_rows": 82003,
+  "val_rows": 17488,
+  "test_rows": 15682,
+  "title_baseline_coverage_test": 0.2965,
+  "ridge_tuning": [
+    {
+      "alpha": 0.3,
+      "val_rmse_log": 0.2703
+    },
+    {
+      "alpha": 1.0,
+      "val_rmse_log": 0.2521
+    },
+    {
+      "alpha": 3.0,
+      "val_rmse_log": 0.247
+    },
+    {
+      "alpha": 10.0,
+      "val_rmse_log": 0.2535
+    }
+  ],
+  "ridge_alpha": 3.0,
+  "lightgbm_best_iteration": 2997,
+  "final_model_chosen_on_validation": "ridge",
+  "validation": {
+    "baseline_title_median": {
+      "n": 17488,
+      "rmse_dollars": 71246,
+      "mae_dollars": 46657,
+      "median_abs_err_dollars": 29852,
+      "r2_log": 0.1877
+    },
+    "ridge": {
+      "n": 17488,
+      "rmse_dollars": 33981,
+      "mae_dollars": 19997,
+      "median_abs_err_dollars": 10596,
+      "r2_log": 0.8526
+    },
+    "lightgbm": {
+      "n": 17488,
+      "rmse_dollars": 34910,
+      "mae_dollars": 20171,
+      "median_abs_err_dollars": 10363,
+      "r2_log": 0.8455
+    }
+  },
+  "test": {
+    "baseline_title_median": {
+      "n": 15682,
+      "rmse_dollars": 70661,
+      "mae_dollars": 44802,
+      "median_abs_err_dollars": 27772,
+      "r2_log": 0.1711
+    },
+    "ridge": {
+      "n": 15682,
+      "rmse_dollars": 36204,
+      "mae_dollars": 20692,
+      "median_abs_err_dollars": 11249,
+      "r2_log": 0.8358
+    },
+    "lightgbm": {
+      "n": 15682,
+      "rmse_dollars": 36644,
+      "mae_dollars": 20975,
+      "median_abs_err_dollars": 10883,
+      "r2_log": 0.8264
+    }
+  },
+  "test_bay_area": {
+    "baseline_title_median": {
+      "n": 5419,
+      "rmse_dollars": 93589,
+      "mae_dollars": 62970,
+      "median_abs_err_dollars": 34012,
+      "r2_log": -0.0571
+    },
+    "ridge": {
+      "n": 5419,
+      "rmse_dollars": 45776,
+      "mae_dollars": 27629,
+      "median_abs_err_dollars": 15056,
+      "r2_log": 0.8306
+    },
+    "lightgbm": {
+      "n": 5419,
+      "rmse_dollars": 46013,
+      "mae_dollars": 27631,
+      "median_abs_err_dollars": 15134,
+      "r2_log": 0.8299
+    }
+  },
+  "hidden_pay_in_text_test_companies": {
+    "baseline_title_median": {
+      "n": 212,
+      "rmse_dollars": 80874,
+      "mae_dollars": 45203,
+      "median_abs_err_dollars": 26853,
+      "r2_log": 0.2209
+    },
+    "ridge": {
+      "n": 212,
+      "rmse_dollars": 53007,
+      "mae_dollars": 27440,
+      "median_abs_err_dollars": 11973,
+      "r2_log": 0.6822
+    },
+    "lightgbm": {
+      "n": 212,
+      "rmse_dollars": 54957,
+      "mae_dollars": 27243,
+      "median_abs_err_dollars": 11335,
+      "r2_log": 0.6994
+    }
+  },
+  "hidden_pay_in_text_all": {
+    "baseline_title_median": {
+      "n": 1837,
+      "rmse_dollars": 71878,
+      "mae_dollars": 41567,
+      "median_abs_err_dollars": 24652,
+      "r2_log": 0.1986
+    },
+    "ridge": {
+      "n": 1837,
+      "rmse_dollars": 51389,
+      "mae_dollars": 25724,
+      "median_abs_err_dollars": 12173,
+      "r2_log": 0.6195
+    },
+    "lightgbm": {
+      "n": 1837,
+      "rmse_dollars": 49405,
+      "mae_dollars": 25803,
+      "median_abs_err_dollars": 13083,
+      "r2_log": 0.6219
+    }
+  }
+}

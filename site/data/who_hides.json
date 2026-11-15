@@ -1,0 +1,718 @@
+{
+ "test": {
+  "baseline_majority": {
+   "n": 18569,
+   "share_hiding": 0.1463,
+   "auc": 0.5,
+   "precision": 0.0,
+   "recall": 0.0,
+   "macro_f1": 0.4605
+  },
+  "logistic_regression_no_description": {
+   "n": 18569,
+   "share_hiding": 0.1463,
+   "auc": 0.6987,
+   "precision": 0.3349,
+   "recall": 0.2672,
+   "macro_f1": 0.5954
+  },
+  "logistic_regression": {
+   "n": 18569,
+   "share_hiding": 0.1463,
+   "auc": 0.8396,
+   "precision": 0.4964,
+   "recall": 0.5355,
+   "macro_f1": 0.7141
+  }
+ },
+ "test_bay_area": {
+  "baseline_majority": {
+   "n": 6403,
+   "share_hiding": 0.1451,
+   "auc": 0.5,
+   "precision": 0.0,
+   "recall": 0.0,
+   "macro_f1": 0.4609
+  },
+  "logistic_regression_no_description": {
+   "n": 6403,
+   "share_hiding": 0.1451,
+   "auc": 0.6957,
+   "precision": 0.3254,
+   "recall": 0.31,
+   "macro_f1": 0.6025
+  },
+  "logistic_regression": {
+   "n": 6403,
+   "share_hiding": 0.1451,
+   "auc": 0.8443,
+   "precision": 0.4856,
+   "recall": 0.564,
+   "macro_f1": 0.7165
+  }
+ },
+ "subgroups": [
+  {
+   "dimension": "all",
+   "group": "all test",
+   "n": 18569,
+   "share_hiding": 0.1463,
+   "auc": 0.8396,
+   "precision": 0.4964,
+   "recall": 0.5355,
+   "macro_f1": 0.7141
+  },
+  {
+   "dimension": "region",
+   "group": "Bay Area",
+   "n": 6403,
+   "share_hiding": 0.1451,
+   "auc": 0.8443,
+   "precision": 0.4856,
+   "recall": 0.564,
+   "macro_f1": 0.7165
+  },
+  {
+   "dimension": "region",
+   "group": "rest of CA",
+   "n": 12166,
+   "share_hiding": 0.147,
+   "auc": 0.8378,
+   "precision": 0.5027,
+   "recall": 0.5207,
+   "macro_f1": 0.7128
+  },
+  {
+   "dimension": "job_family",
+   "group": "education",
+   "n": 450,
+   "share_hiding": 0.1156,
+   "auc": 0.8065,
+   "precision": 0.2778,
+   "recall": 0.2885,
+   "macro_f1": 0.5937
+  },
+  {
+   "dimension": "job_family",
+   "group": "food service",
+   "n": 1035,
+   "share_hiding": 0.2357,
+   "auc": 0.8634,
+   "precision": 0.657,
+   "recall": 0.5574,
+   "macro_f1": 0.7463
+  },
+  {
+   "dimension": "job_family",
+   "group": "healthcare",
+   "n": 2611,
+   "share_hiding": 0.0877,
+   "auc": 0.8025,
+   "precision": 0.3795,
+   "recall": 0.3231,
+   "macro_f1": 0.6458
+  },
+  {
+   "dimension": "job_family",
+   "group": "other",
+   "n": 10905,
+   "share_hiding": 0.1496,
+   "auc": 0.8296,
+   "precision": 0.4705,
+   "recall": 0.5518,
+   "macro_f1": 0.7062
+  },
+  {
+   "dimension": "job_family",
+   "group": "retail",
+   "n": 1016,
+   "share_hiding": 0.1319,
+   "auc": 0.878,
+   "precision": 0.6863,
+   "recall": 0.2612,
+   "macro_f1": 0.6581
+  },
+  {
+   "dimension": "job_family",
+   "group": "tech",
+   "n": 1998,
+   "share_hiding": 0.1677,
+   "auc": 0.8791,
+   "precision": 0.5399,
+   "recall": 0.6866,
+   "macro_f1": 0.7557
+  },
+  {
+   "dimension": "job_family",
+   "group": "warehouse",
+   "n": 554,
+   "share_hiding": 0.1661,
+   "auc": 0.9133,
+   "precision": 0.7647,
+   "recall": 0.7065,
+   "macro_f1": 0.842
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "Contract",
+   "n": 342,
+   "share_hiding": 0.2485,
+   "auc": 0.8258,
+   "precision": 0.5413,
+   "recall": 0.6941,
+   "macro_f1": 0.7266
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "Full-time",
+   "n": 10615,
+   "share_hiding": 0.1032,
+   "auc": 0.8182,
+   "precision": 0.4095,
+   "recall": 0.4502,
+   "macro_f1": 0.6798
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "Part-time",
+   "n": 3514,
+   "share_hiding": 0.14,
+   "auc": 0.8697,
+   "precision": 0.6217,
+   "recall": 0.3841,
+   "macro_f1": 0.7039
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "Temporary",
+   "n": 189,
+   "share_hiding": 0.0476,
+   "auc": 0.8272,
+   "precision": 0.2143,
+   "recall": 0.6667,
+   "macro_f1": 0.6255
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "missing",
+   "n": 3624,
+   "share_hiding": 0.2712,
+   "auc": 0.822,
+   "precision": 0.5488,
+   "recall": 0.6918,
+   "macro_f1": 0.7203
+  },
+  {
+   "dimension": "city",
+   "group": "Fremont",
+   "n": 260,
+   "share_hiding": 0.0769,
+   "auc": 0.9417,
+   "precision": 0.56,
+   "recall": 0.7,
+   "macro_f1": 0.7932
+  },
+  {
+   "dimension": "city",
+   "group": "Los Angeles",
+   "n": 1421,
+   "share_hiding": 0.1513,
+   "auc": 0.8228,
+   "precision": 0.4764,
+   "recall": 0.5628,
+   "macro_f1": 0.7102
+  },
+  {
+   "dimension": "city",
+   "group": "Mountain View",
+   "n": 189,
+   "share_hiding": 0.1164,
+   "auc": 0.7409,
+   "precision": 0.4545,
+   "recall": 0.2273,
+   "macro_f1": 0.6182
+  },
+  {
+   "dimension": "city",
+   "group": "Oakland",
+   "n": 202,
+   "share_hiding": 0.1436,
+   "auc": 0.7794,
+   "precision": 0.5,
+   "recall": 0.4828,
+   "macro_f1": 0.7038
+  },
+  {
+   "dimension": "city",
+   "group": "Palo Alto",
+   "n": 455,
+   "share_hiding": 0.0813,
+   "auc": 0.9507,
+   "precision": 0.5738,
+   "recall": 0.9459,
+   "macro_f1": 0.8399
+  },
+  {
+   "dimension": "city",
+   "group": "San Diego",
+   "n": 915,
+   "share_hiding": 0.129,
+   "auc": 0.836,
+   "precision": 0.5175,
+   "recall": 0.5,
+   "macro_f1": 0.7186
+  },
+  {
+   "dimension": "city",
+   "group": "San Francisco",
+   "n": 1642,
+   "share_hiding": 0.1529,
+   "auc": 0.8264,
+   "precision": 0.3934,
+   "recall": 0.6614,
+   "macro_f1": 0.6814
+  },
+  {
+   "dimension": "city",
+   "group": "San Jose",
+   "n": 794,
+   "share_hiding": 0.1448,
+   "auc": 0.8588,
+   "precision": 0.5037,
+   "recall": 0.5913,
+   "macro_f1": 0.7294
+  },
+  {
+   "dimension": "city",
+   "group": "San Mateo",
+   "n": 102,
+   "share_hiding": 0.1863,
+   "auc": 0.7876,
+   "precision": 0.4737,
+   "recall": 0.4737,
+   "macro_f1": 0.6766
+  },
+  {
+   "dimension": "city",
+   "group": "Santa Clara",
+   "n": 203,
+   "share_hiding": 0.069,
+   "auc": 0.9607,
+   "precision": 0.4545,
+   "recall": 0.7143,
+   "macro_f1": 0.7562
+  },
+  {
+   "dimension": "city",
+   "group": "Sunnyvale",
+   "n": 288,
+   "share_hiding": 0.191,
+   "auc": 0.9465,
+   "precision": 0.8205,
+   "recall": 0.5818,
+   "macro_f1": 0.8093
+  }
+ ],
+ "top_signals": [
+  {
+   "direction": "hides pay",
+   "feature": "desc: resume",
+   "coefficient": 2.997
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: description",
+   "coefficient": 2.677
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: volunteer",
+   "coefficient": 2.279
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: insurance schedule",
+   "coefficient": 1.893
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: csu",
+   "coefficient": 1.873
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: casino",
+   "coefficient": 1.704
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: interested",
+   "coefficient": 1.702
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: send",
+   "coefficient": 1.56
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: com",
+   "coefficient": 1.545
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: hour shift",
+   "coefficient": 1.527
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: email resume",
+   "coefficient": 1.515
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: fax",
+   "coefficient": 1.513
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: us",
+   "coefficient": 1.51
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: amd",
+   "coefficient": 1.49
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: reserve",
+   "coefficient": 1.484
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: schedule hour",
+   "coefficient": 1.472
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: u103",
+   "coefficient": 1.445
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: pt",
+   "coefficient": 1.401
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: send resume",
+   "coefficient": 1.39
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: receptionist",
+   "coefficient": 1.371
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: good",
+   "coefficient": 1.371
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: home health",
+   "coefficient": 1.364
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: talent",
+   "coefficient": 1.351
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: surgeon",
+   "coefficient": 1.342
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: property description",
+   "coefficient": 1.338
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: wendy",
+   "coefficient": 1.337
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: property number",
+   "coefficient": 1.335
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: guest",
+   "coefficient": 1.332
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: ae",
+   "coefficient": 1.33
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: software",
+   "coefficient": 1.327
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: looking",
+   "coefficient": 1.324
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: submit",
+   "coefficient": 1.322
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: letter",
+   "coefficient": 1.312
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: email",
+   "coefficient": 1.306
+  },
+  {
+   "direction": "hides pay",
+   "feature": "title: administrative",
+   "coefficient": 1.303
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: california state",
+   "coefficient": 1.299
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: info",
+   "coefficient": 1.297
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: mail",
+   "coefficient": 1.289
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: state university",
+   "coefficient": 1.282
+  },
+  {
+   "direction": "hides pay",
+   "feature": "desc: doctors",
+   "coefficient": 1.28
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: work location",
+   "coefficient": -6.564
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: location person",
+   "coefficient": -6.177
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: location",
+   "coefficient": -4.337
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: range",
+   "coefficient": -4.28
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: compensation",
+   "coefficient": -4.09
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: benefits",
+   "coefficient": -3.95
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: person",
+   "coefficient": -3.787
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: factors",
+   "coefficient": -2.815
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: role",
+   "coefficient": -2.583
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: paid",
+   "coefficient": -2.552
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: bonus",
+   "coefficient": -2.451
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: 401",
+   "coefficient": -2.421
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: insurance work",
+   "coefficient": -2.398
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: depending experience",
+   "coefficient": -2.293
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: benefits 401",
+   "coefficient": -2.178
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: usd",
+   "coefficient": -2.172
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: determined",
+   "coefficient": -2.141
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: depending",
+   "coefficient": -2.093
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: factors including",
+   "coefficient": -2.05
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: insurance",
+   "coefficient": -2.016
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: equity",
+   "coefficient": -2.007
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: rate",
+   "coefficient": -1.978
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: flexible schedule",
+   "coefficient": -1.952
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: based",
+   "coefficient": -1.917
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: eligible",
+   "coefficient": -1.876
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: dental",
+   "coefficient": -1.853
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: pay",
+   "coefficient": -1.833
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: range position",
+   "coefficient": -1.771
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: time work",
+   "coefficient": -1.753
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: vision insurance",
+   "coefficient": -1.752
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: hybrid",
+   "coefficient": -1.744
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: community",
+   "coefficient": -1.721
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: opportunity employer",
+   "coefficient": -1.713
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: opportunity",
+   "coefficient": -1.696
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: dental insurance",
+   "coefficient": -1.661
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: mission",
+   "coefficient": -1.643
+  },
+  {
+   "direction": "shows pay",
+   "feature": "title: service sales",
+   "coefficient": -1.639
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: health insurance",
+   "coefficient": -1.629
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: employer",
+   "coefficient": -1.625
+  },
+  {
+   "direction": "shows pay",
+   "feature": "desc: shifts",
+   "coefficient": -1.608
+  }
+ ]
+}

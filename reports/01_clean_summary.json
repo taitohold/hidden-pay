@@ -1,0 +1,43 @@
+{
+  "rows_raw": 140816,
+  "rows_after_dedupe": 136058,
+  "duplicates_removed": 4758,
+  "has_salary": 116190,
+  "no_salary": 19868,
+  "share_no_salary": 0.146,
+  "salary_field_unparseable": 183,
+  "salary_out_of_range_dropped": 834,
+  "salary_range_bounds": [
+    20000,
+    600000
+  ],
+  "salary_usable_for_model": 115173,
+  "salary_period_counts": {
+    "hour": 62417,
+    "year": 50979,
+    "month": 1412,
+    "week": 855,
+    "day": 344
+  },
+  "pay_in_text": 1837,
+  "share_of_no_salary_with_pay_in_text": 0.0925,
+  "has_salary_and_pay_in_description": 80960,
+  "titles_containing_pay": 1493,
+  "n_cities": 1204,
+  "bay_area_rows": 45979,
+  "bay_area_no_salary": 6986,
+  "bay_area_share_no_salary": 0.1519,
+  "rest_of_ca_share_no_salary": 0.143,
+  "bay_area_salary_usable": 38700,
+  "bay_area_pay_in_text": 514,
+  "split_rows": {
+    "train": 97044,
+    "val": 20445,
+    "test": 18569
+  },
+  "split_companies": {
+    "test": 5317,
+    "train": 24808,
+    "val": 5316
+  }
+}

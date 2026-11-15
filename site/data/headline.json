@@ -1,0 +1,22 @@
+{
+ "postings_california": 136058,
+ "postings_bay_area": 45979,
+ "bay_area_no_salary": 6986,
+ "bay_area_share_no_salary": 0.1519,
+ "california_share_no_salary": 0.146,
+ "pay_in_text": 1837,
+ "bay_area_pay_in_text": 514,
+ "hidden_burdened_city_1br": 0.547,
+ "hidden_burdened_county_1br": 0.5415,
+ "hidden_burdened_city_2br": 0.7834,
+ "hidden_median_predicted_pay": 116508,
+ "shown_burdened_city_1br": 0.4999,
+ "shown_median_actual_pay": 122195,
+ "model_check": {
+  "n": 5419,
+  "burdened_using_actual_pay": 0.5241,
+  "burdened_using_predicted_pay": 0.5424,
+  "agreement_per_posting": 0.8847
+ },
+ "definition": "rent-burdened = 12 x monthly rent > 30% of gross annual pay (gross, not take-home)"
+}

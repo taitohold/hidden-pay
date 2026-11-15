@@ -1,0 +1,109 @@
+{
+  "target": "posting has no salary field",
+  "train_rows": 97044,
+  "val_rows": 20445,
+  "test_rows": 18569,
+  "n_features": 123995,
+  "tuning": [
+    {
+      "C": 0.03,
+      "val_auc": 0.7835
+    },
+    {
+      "C": 0.1,
+      "val_auc": 0.8044
+    },
+    {
+      "C": 0.3,
+      "val_auc": 0.811
+    },
+    {
+      "C": 1.0,
+      "val_auc": 0.8081
+    }
+  ],
+  "chosen_C": 0.3,
+  "threshold": 0.59,
+  "no_description_model": {
+    "tuning": [
+      {
+        "C": 0.03,
+        "val_auc": 0.6815
+      },
+      {
+        "C": 0.1,
+        "val_auc": 0.6833
+      },
+      {
+        "C": 0.3,
+        "val_auc": 0.6805
+      },
+      {
+        "C": 1.0,
+        "val_auc": 0.6718
+      }
+    ],
+    "chosen_C": 0.1,
+    "threshold": 0.66
+  },
+  "validation": {
+    "n": 20445,
+    "share_hiding": 0.1383,
+    "auc": 0.811,
+    "precision": 0.4791,
+    "recall": 0.5095,
+    "macro_f1": 0.7048
+  },
+  "test": {
+    "baseline_majority": {
+      "n": 18569,
+      "share_hiding": 0.1463,
+      "auc": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "macro_f1": 0.4605
+    },
+    "logistic_regression_no_description": {
+      "n": 18569,
+      "share_hiding": 0.1463,
+      "auc": 0.6987,
+      "precision": 0.3349,
+      "recall": 0.2672,
+      "macro_f1": 0.5954
+    },
+    "logistic_regression": {
+      "n": 18569,
+      "share_hiding": 0.1463,
+      "auc": 0.8396,
+      "precision": 0.4964,
+      "recall": 0.5355,
+      "macro_f1": 0.7141
+    }
+  },
+  "test_bay_area": {
+    "baseline_majority": {
+      "n": 6403,
+      "share_hiding": 0.1451,
+      "auc": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "macro_f1": 0.4609
+    },
+    "logistic_regression_no_description": {
+      "n": 6403,
+      "share_hiding": 0.1451,
+      "auc": 0.6957,
+      "precision": 0.3254,
+      "recall": 0.31,
+      "macro_f1": 0.6025
+    },
+    "logistic_regression": {
+      "n": 6403,
+      "share_hiding": 0.1451,
+      "auc": 0.8443,
+      "precision": 0.4856,
+      "recall": 0.564,
+      "macro_f1": 0.7165
+    }
+  }
+}

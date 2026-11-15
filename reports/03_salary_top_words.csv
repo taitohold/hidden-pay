@@ -1,0 +1,81 @@
+direction,feature,coefficient
+pay up,title: psychiatrist,1.04
+pay up,desc: 10 years,0.981
+pay up,title: physician,0.98
+pay up,title: dentist,0.823
+pay up,title: director,0.819
+pay up,title: crna,0.758
+pay up,desc: board,0.746
+pay up,desc: years,0.712
+pay up,desc: ai,0.693
+pay up,title: orthodontist,0.685
+pay up,title: vp,0.67
+pay up,desc: 12 years,0.668
+pay up,title: svp,0.638
+pay up,title: anesthesiologist,0.62
+pay up,desc: malpractice,0.604
+pay up,desc: physician,0.603
+pay up,title: surgeon,0.599
+pay up,title: principal,0.593
+pay up,desc: practice,0.587
+pay up,title: dermatologist,0.58
+pay up,desc: engineering,0.577
+pay up,desc: 15 years,0.561
+pay up,desc: teams,0.56
+pay up,title: radiologist,0.559
+pay up,desc: license,0.545
+pay up,title: md,0.544
+pay up,desc: equity,0.543
+pay up,desc: medicine,0.541
+pay up,title: chief,0.537
+pay up,desc: board eligible,0.528
+pay up,title: pharmacist,0.528
+pay up,desc: deals,0.508
+pay up,title: optometrist,0.508
+pay up,title: counsel,0.503
+pay up,desc: deep,0.496
+pay up,title: vice,0.49
+pay up,title: medical director,0.489
+pay up,title: pediatrician,0.485
+pay up,desc: relocation,0.474
+pay up,desc: years experience,0.473
+pay down,desc: store,-0.657
+pay down,title: intern,-0.584
+pay down,desc: high school,-0.487
+pay down,desc: cleaning,-0.444
+pay down,desc: customer service,-0.44
+pay down,desc: assist,-0.42
+pay down,title: aide,-0.404
+pay down,title: assistant,-0.398
+pay down,title: student,-0.384
+pay down,desc: diploma,-0.381
+pay down,title: clinic setting,-0.381
+pay down,desc: assistant,-0.375
+pay down,title: security officer,-0.368
+pay down,desc: clean,-0.364
+pay down,desc: shift,-0.361
+pay down,desc: retail,-0.36
+pay down,desc: type time,-0.358
+pay down,desc: discounts,-0.355
+pay down,desc: lmu,-0.346
+pay down,title: assembler,-0.346
+pay down,desc: driver,-0.344
+pay down,desc: food,-0.337
+pay down,desc: supervision,-0.337
+pay down,desc: restaurant,-0.334
+pay down,desc: youth,-0.328
+pay down,title: clerk,-0.326
+pay down,desc: fun,-0.325
+pay down,title: attendant,-0.325
+pay down,desc: check,-0.319
+pay down,desc: entry level,-0.316
+pay down,desc: supervisor,-0.314
+pay down,desc: internship,-0.313
+pay down,desc: tips,-0.312
+pay down,title: coordinator,-0.31
+pay down,desc: brands,-0.307
+pay down,title: technician,-0.306
+pay down,desc: years age,-0.305
+pay down,desc: aide,-0.304
+pay down,title: integration architect,-0.302
+pay down,desc: duties,-0.3

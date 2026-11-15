@@ -1,0 +1,1060 @@
+city,postings
+Los Angeles,10196
+San Diego,7017
+Sacramento,2928
+Irvine,2856
+Unknown,1769
+Fresno,1735
+Bakersfield,1310
+Long Beach,1134
+Riverside,1109
+Anaheim,988
+Torrance,887
+Stockton,868
+Costa Mesa,867
+El Segundo,866
+Santa Ana,835
+Modesto,825
+Pasadena,712
+Culver City,701
+Santa Monica,693
+Ontario,675
+Santa Barbara,670
+Redding,665
+San Luis Obispo,660
+Glendale,637
+San Francisco Bay Area,633
+San Bernardino,627
+Orange,609
+Newport Beach,605
+Oxnard,574
+Carlsbad,560
+Roseville,532
+Huntington Beach,532
+Temecula,524
+Burbank,524
+Corona,510
+Visalia,509
+Lancaster,495
+Chico,488
+Ventura,480
+Santa Cruz,478
+Rancho Cucamonga,465
+Beverly Hills,459
+Salinas,448
+Thousand Oaks,405
+El Cajon,395
+Merced,380
+Palmdale,369
+Chula Vista,368
+Brea,368
+Victorville,364
+Valencia,334
+Turlock,330
+Yuba City,328
+Escondido,327
+Tustin,325
+Fontana,323
+Hawthorne,321
+Monterey,320
+Camarillo,309
+City Of Industry,308
+Santa Maria,302
+Santa Clarita,298
+Fullerton,290
+Oceanside,289
+Van Nuys,284
+Murrieta,279
+Folsom,279
+Gardena,275
+Woodland Hills,270
+Pomona,265
+Elk Grove,262
+Carson,257
+Mission Viejo,257
+Redlands,255
+Chino,253
+Santa Fe Springs,251
+Downey,244
+Clovis,243
+Cerritos,242
+Poway,241
+El Centro,240
+Madera,240
+Woodland,238
+Garden Grove,228
+Rancho Cordova,220
+Northridge,219
+Los Angeles County,218
+Lake Forest,218
+Moreno Valley,216
+San Marcos,213
+Vista,210
+National City,209
+Commerce,208
+Lodi,208
+Inglewood,207
+Fountain Valley,205
+Whittier,202
+Arcadia,199
+Redondo Beach,196
+La Jolla,194
+Hanford,193
+Simi Valley,190
+Tulare,189
+Orange County,184
+Oroville,182
+Buena Park,181
+Upland,180
+Chatsworth,180
+West Sacramento,177
+North Hollywood,174
+Goleta,171
+Watsonville,170
+Rocklin,167
+Sonora,167
+West Hollywood,166
+Palm Desert,166
+La Mesa,166
+Cypress,164
+Sherman Oaks,162
+Compton,162
+Placerville,162
+West Covina,161
+Manteca,159
+Laguna Hills,156
+El Monte,155
+Calabasas,154
+Rialto,154
+Palm Springs,152
+Westlake Village,143
+Rosemead,140
+Aliso Viejo,138
+Alhambra,133
+Manhattan Beach,133
+Apple Valley,133
+Montebello,132
+Encinitas,129
+Hollister,127
+Canoga Park,125
+Auburn,124
+Laguna Niguel,124
+Lakewood,121
+Paso Robles,119
+Santee,119
+Monterey Park,116
+Perris,113
+Ukiah,113
+San Clemente,111
+Encino,110
+Scotts Valley,108
+Truckee,106
+Lake Elsinore,106
+Covina,105
+Rancho Santa Margarita,105
+Yorba Linda,105
+South Gate,104
+Vernon,104
+Loma Linda,103
+La Verne,102
+Sacramento County,102
+Norwalk,102
+Hemet,102
+Marysville,100
+Diamond Bar,100
+Sylmar,100
+La Mirada,99
+Citrus Heights,99
+Porterville,99
+Red Bluff,98
+Menifee,97
+Montclair,96
+Westminster,95
+Hollywood,95
+Atwater,95
+Monrovia,94
+Indio,93
+Chino Hills,92
+Silicon Valley,92
+Hesperia,91
+Baldwin Park,91
+Glendora,90
+Marina Del Rey,89
+Grass Valley,89
+San Fernando,89
+Sun Valley,88
+Colton,88
+El Dorado Hills,87
+Highland,86
+Lompoc,85
+Foothill Ranch,85
+Lynwood,83
+Dana Point,82
+South Lake Tahoe,82
+Jurupa Valley,81
+Los Alamitos,80
+Carmichael,80
+Coronado,79
+San Juan Capistrano,79
+Pico Rivera,79
+Huntington Park,79
+Agoura Hills,77
+Walnut,77
+Azusa,77
+Seaside,77
+San Dimas,76
+Eureka,76
+Signal Hill,76
+Claremont,76
+Eastvale,74
+Brawley,74
+North Highlands,73
+Irwindale,72
+La Habra,72
+Alpine,72
+Fort Bragg,71
+Lincoln,70
+Ceres,70
+San Gabriel,69
+Barstow,69
+Del Mar,68
+Norco,68
+Capitola,68
+Coalinga,68
+Moorpark,67
+San Pedro,67
+Beaumont,67
+Studio City,66
+Atascadero,66
+Seal Beach,65
+Port Hueneme,65
+Placentia,65
+Marina,65
+Arroyo Grande,65
+South El Monte,64
+Oakdale,64
+La Quinta,64
+Tarzana,63
+Rancho Mirage,63
+Riverbank,60
+Yucaipa,59
+Los Banos,59
+Duarte,58
+Ridgecrest,57
+Calexico,57
+Soledad,57
+Solana Beach,56
+Reseda,56
+West Hills,56
+Carmel-By-The-Sea,55
+Paramount,55
+Kerman,55
+Colusa,54
+Universal City,54
+Malibu,53
+Panorama City,52
+Bellflower,51
+Mariposa,51
+Lemon Grove,51
+Pismo Beach,50
+Selma,50
+Livingston,50
+Spring Valley,49
+Stanton,49
+Lakeside,49
+Contra Costa County,48
+Laguna Beach,48
+Shafter,48
+Fair Oaks,48
+Pebble Beach,48
+Delano,47
+La Palma,47
+Carpinteria,47
+Yosemite National Park,47
+Willows,47
+Jackson,46
+Granada Hills,46
+La Puente,45
+Newbury Park,45
+Cameron Park,44
+North Hills,44
+Tehachapi,43
+Mira Loma,43
+Chowchilla,43
+Corning,42
+Galt,42
+Harbor City,41
+Crescent City,41
+Bell Gardens,41
+Aptos,40
+Templeton,40
+Anderson,40
+Banning,39
+Inland Empire,39
+Ojai,39
+Venice,38
+Cathedral City,38
+Yucca Valley,38
+Sand City,38
+Cabazon,37
+Mission Hills,37
+Imperial,37
+Pacoima,36
+Santa Clara County,36
+Lemoore,36
+San Diego County,35
+Rowland Heights,35
+Coachella,35
+Camp Pendleton,35
+Oakhurst,35
+Wildomar,34
+Ladera Ranch,34
+California City,34
+Reedley,34
+Patterson,33
+Antelope,33
+Mojave,33
+Sanger,33
+Soquel,31
+San Jacinto,31
+Yreka,30
+San Fernando Valley,30
+Vandenberg Afb,30
+Dinuba,30
+Santa Paula,30
+Arvin,29
+Orangevale,29
+South Pasadena,29
+Edwards Afb,29
+Ripon,29
+Twentynine Palms,29
+Rancho Dominguez,29
+Gridley,29
+Pacific Grove,28
+Granite Bay,28
+Fallbrook,28
+Hermosa Beach,28
+Hacienda Heights,28
+Susanville,28
+Rancho Palos Verdes,27
+Mammoth Lakes,27
+San Luis Obispo County,27
+Morro Bay,27
+French Camp,26
+Montrose,26
+Bloomington,26
+Porter Ranch,26
+Gold River,26
+Temple City,26
+Fresno County,25
+San Marino,25
+Corcoran,25
+Tuolumne,25
+Arcata,24
+Fowler,24
+Adelanto,24
+Wasco,24
+Indian Wells,23
+Lawndale,23
+Imperial Beach,23
+Wilmington,23
+Canyon Country,23
+Paradise,23
+Cudahy,23
+King City,22
+San Ysidro,22
+Greenfield,22
+Angels Camp,22
+Groveland,22
+East Bay,21
+Castaic,21
+Nevada City,21
+Channel Islands,21
+Playa Vista,20
+Lakeport,20
+Bishop,20
+Kingsburg,20
+Valley Village,20
+Winnetka,20
+Gonzales,20
+Jamul,20
+Willits,20
+Ramona,20
+Salida,20
+Altadena,20
+Clearlake,19
+Maywood,19
+Williams,19
+Redwood Valley,19
+Loomis,19
+Nipomo,19
+Desert Hot Springs,19
+Phelan,19
+Grand Terrace,19
+Winchester,19
+Orland,19
+Hilmar,19
+San Bernardino County,18
+Fort Irwin,18
+Anaheim Hills,18
+San Joaquin County,18
+Rancho Santa Fe,18
+Lake Arrowhead,18
+Shingle Springs,17
+Napa County,17
+Monterey County,17
+Exeter,17
+Big Bear Lake,17
+Blythe,17
+Firebaugh,17
+Bell,17
+Quincy,17
+Beale Afb,17
+Jamestown,17
+Fillmore,17
+Big Sur,17
+Corona Del Mar,16
+Lindsay,16
+Newhall,16
+Buellton,16
+Rosamond,16
+East Los Angeles,15
+Arleta,15
+Tahoe City,15
+Live Oak,15
+Artesia,15
+Solano County,15
+Rolling Hills Estates,15
+Industry,14
+Bonita,14
+Century City,14
+La Cañada Flintridge,14
+La Crescenta,14
+Ventura County,14
+Sunland,14
+China Lake,13
+Montecito,13
+Pacific Palisades,13
+Shasta Lake,13
+West Los Angeles,13
+Lebec,13
+Santa Ynez,13
+Riverside County,13
+Fish Camp,13
+Calabasas Hills,12
+Mckinleyville,12
+Laguna Woods,12
+Chester,12
+Lomita,12
+Taft,12
+Newman,12
+Mount Shasta,12
+La Canada,12
+San Joaquin,12
+Weed,12
+Grover Beach,12
+Needles,11
+Westwood,11
+Mendocino,11
+Rio Linda,11
+Stevenson Ranch,11
+Valley Springs,11
+Tuolumne County,11
+San Francisco County,11
+Travis Afb,11
+Mendocino County,11
+Fortuna,11
+Ione,11
+Los Osos,11
+Wheatland,11
+Mendota,11
+Mount Hermon,11
+Santa Barbara County,11
+Stanley,11
+Point Mugu,10
+Arbuckle,10
+Woodlake,10
+Little River,10
+Mather,10
+Kern County,10
+Mcfarland,10
+Weaverville,10
+Lost Hills,10
+Linda,10
+Waterloo,10
+Marin County,9
+Freedom,9
+Delhi,9
+Avalon,9
+Gustine,9
+Castroville,9
+Colfax,9
+Campo,9
+Burney,9
+Tipton,9
+San Andreas,9
+Murrieta Hot Springs,9
+Lone Pine,9
+Lamont,9
+Loyalton,9
+Paicines,9
+Olivehurst,9
+Highland Park,8
+Stanislaus County,8
+Newport Coast,8
+Farmersville,8
+San Gabriel Valley,8
+Valley Center,8
+Waterford,8
+Thermal,8
+Tujunga,8
+Yolo County,8
+Alameda County,8
+March Air Reserve Base,8
+Arnold,8
+Trabuco Canyon,8
+Shasta County,8
+Avila Beach,8
+Mcclellan Park,8
+Carmel Valley,8
+Millville,8
+Sierra Madre,7
+Pauma Valley,7
+Merced County,7
+Death Valley,7
+Dominguez,7
+Alturas,7
+Oak Park,7
+Oakville,7
+Los Angeles Afb,7
+Tulare County,7
+Joshua Tree,7
+Madera County,7
+Bridgeport,7
+Brooks,7
+Mountain Pass,7
+Edwards,7
+San Mateo County,7
+Palos Verdes Estates,7
+N Hollywood,7
+Los Molinos,7
+Lennox,7
+Durham,7
+Redwood,7
+London,7
+Plymouth,7
+Parlier,7
+Santa Cruz County,7
+Boyle Heights,7
+Goshen,7
+Cardiff-By-The-Sea,7
+San Juan Bautista,7
+Sonoma County,7
+Acton,7
+Littlerock,7
+Acampo,7
+Quartz Hill,7
+Twin Bridges,7
+San Simeon,7
+Friant,6
+Olympic Valley,6
+Lockeford,6
+Placer County,6
+Central,6
+Moffett Field,6
+Ben Lomond,6
+Murphys,6
+Penn Valley,6
+Boulder Creek,6
+Prunedale,6
+Calimesa,6
+Saugus,6
+Lake Isabella,6
+Diamond Springs,6
+Escalon,6
+Playa Del Rey,6
+Rsm,6
+Hoopa,5
+Hopland,5
+Westchester,5
+Running Springs,5
+Scotia,5
+Cherry Valley,5
+Meadow Vista,5
+Buttonwillow,5
+Mettler,5
+Cambria,5
+Del Rey,5
+Bonsall,5
+Thousand Palms,5
+Hawaiian Gardens,5
+San Miguel,5
+Hickman,5
+Felton,5
+Holtville,5
+Palomar Mountain,5
+Mission Valley,5
+Magalia,5
+Isla Vista,5
+Huron,5
+Mecca,5
+Pixley,5
+Sutter,5
+Marin City,5
+Laguna Canyon,5
+Naval Medical Center San Diego,5
+Burlington,5
+Washington,4
+Orcutt,4
+Guadalupe,4
+Havasu Lake,4
+Colonia Juarez,4
+Palos Verdes Peninsula,4
+Clio,4
+Mission,4
+Butte County,4
+Willow Creek,4
+Villa Park,4
+Lucerne Valley,4
+Otay Mesa,4
+Pleasant Grove,4
+Norden,4
+Oak Hills,4
+Rolling Hills,4
+Etna,4
+Los Feliz,4
+Peninsula,4
+Klamath,4
+Mariposa County,4
+Woodbridge,4
+Crestline,4
+Monarch Beach,4
+El Dorado,4
+Yolo,4
+Herlong,4
+Auburn Lake Trails,4
+Sun City,4
+Oceano,4
+Nipton,4
+Point Loma,4
+Fort Hunter Liggett,4
+Winterhaven,4
+Markleeville,4
+San Clemente Island,4
+Santa Margarita,4
+Piñon Hills,4
+Orange Cove,4
+Earlimart,4
+Twain Harte,4
+Rancho Bernardo,4
+Koreatown,4
+North Sacramento,4
+Thompson,4
+Port Hueneme Cbc Base,4
+Capistrano Beach,3
+Lake County,3
+Sutter County,3
+Del Norte County,3
+Boron,3
+Oro Grande,3
+Toluca Lake,3
+Bear Valley,3
+Coarsegold,3
+Summerland,3
+Naval Air Station San Diego,3
+Middletown,3
+Zamora,3
+Traver,3
+Canyon Lake,3
+Tahoe Vista,3
+Big Bear City,3
+Rosemont,3
+Arden-Arcade,3
+N Highlands,3
+Point Arena,3
+Denair,3
+Oregon House,3
+Palo Cedro,3
+Bella Vista,3
+Independence,3
+Nice,3
+W Hollywood,3
+Gorman,3
+Orosi,3
+Ashland,3
+Mesa,3
+Pala,3
+Mira Mesa,3
+Portola,3
+Midway City,3
+Graeagle,3
+Kearny Mesa,3
+Moss Landing,3
+Hughson,3
+Sepulveda,3
+Winton,3
+Bangor,3
+W Sacramento,3
+Strathmore,3
+El Portal,3
+Albion,3
+Pearblossom,3
+Heber,3
+Hidden Valley Lake,3
+Amador County,3
+Esparto,3
+Nas North Island,3
+Rancho Murieta,3
+Mi-Wuk Village,3
+Beckwourth,3
+Borrego Springs,3
+Fort Jones,3
+Huntingtn Bch,3
+Baker,3
+Sherwood Park,3
+Coleville,3
+Clements,3
+Temecula Valley,2
+Wrightwood,2
+Santa Clara Valley,2
+Aromas,2
+Simi,2
+Kings County,2
+Camp Pendleton South,2
+El Macero,2
+Desert Center,2
+Los Olivos,2
+Kernville,2
+Georgetown,2
+Lane,2
+Blue Jay,2
+West Menlo Park,2
+Riverdale,2
+Pacific,2
+Trinidad,2
+Lucerne,2
+Central Valley,2
+Pinecrest,2
+Gualala,2
+Sand Canyon,2
+Coto De Caza,2
+Rncho Domingz,2
+Clairemont,2
+Sloughhouse,2
+Trona,2
+Broadmoor,2
+Cottonwood,2
+Kirkwood,2
+Copperopolis,2
+Wilton,2
+Cutler,2
+Glassell Park,2
+Civic Center Plaza,2
+Camp Pendleton North,2
+Lake View Terrace,2
+Hidden Hills,2
+Oak View,2
+Shadow Hills,2
+Verde,2
+Alto,2
+Lakeshore,2
+Garberville,2
+Terminal Island,2
+Kettleman City,2
+Grove,2
+Mountain Mesa,2
+San Buenaventura,2
+Lake Tahoe,2
+Financial District,2
+Fall River Mills,2
+Bass Lake,2
+Descanso,2
+Boulevard,2
+Tecate,2
+San Juan,2
+Pollock Pines,2
+Presidio Of Monterey,2
+Newport,2
+Leona Valley,2
+Pacific Beach,2
+Alum Rock,2
+Patton,2
+Linden,2
+Santa Nella,2
+Morongo Valley,2
+North Palm Springs,2
+Pioneer,2
+Elmira,2
+Columbia,2
+Napa Valley,2
+Keyes,2
+Greenville,2
+Dos Palos,2
+Salton City,2
+Somerset,2
+Mentone,2
+Ucla,2
+Silverado,2
+Redwood Shores,2
+Rio Del Mar,2
+Miramar,2
+Mckittrick,2
+Del Rey Oaks,2
+El Camino,2
+Highlands,2
+Foster,2
+Inyo County,2
+Calipatria,2
+Temescal Valley,2
+Farmington,2
+Ballico,2
+Sequoia National Park,2
+Clyde,2
+Auberry,2
+Irvine Park,2
+Walnut Park,2
+Three Rivers,2
+Aurora,2
+Victoria,2
+Lincoln Acres,2
+Woodstock,2
+Echo Park,2
+Alliance,2
+Alta Loma,2
+Rancho Park,2
+Larkfield-Wikiup,2
+Jefferson,2
+Humboldt County,2
+Imperial County,2
+Laurel,1
+City Industry,1
+Gerber,1
+San Diego - Mission Valley,1
+9673 Subwaymore Info9673 Wilshire Boulevardbeverly Hills,1
+Wawona,1
+Crows Landing,1
+Jacumba,1
+Point Mugu Nawc,1
+Westwood Village,1
+Wofford Heights,1
+Earp,1
+Smith River,1
+Charter Oak,1
+North Tustin,1
+Veterans Administration,1
+Vernalis,1
+Tulelake,1
+Loleta,1
+Camp Parks,1
+Saint Louis,1
+Marine Corps Air Station Miramar,1
+Represa,1
+Somis,1
+Bermuda Dunes,1
+Julian,1
+Roseland,1
+Shingletown,1
+North Richmond,1
+Terra Linda,1
+Stallion Springs,1
+Westlake Vlg,1
+Mare Island,1
+Sisquoc,1
+East Rancho Dominguez,1
+Bell Canyon,1
+Hancock Park,1
+Dunsmuir,1
+Brownsville,1
+Val Verde,1
+Florin,1
+Riverview,1
+El Paso De Robles,1
+Rubidoux,1
+Hilltop Mall,1
+Hinkley,1
+Cienega,1
+Lakeview,1
+Mc Farland,1
+Agoura,1
+North Fontana,1
+Sycamore,1
+Mount Vernon,1
+Gordon,1
+Alton,1
+Avenal,1
+Nicolaus,1
+El Toro,1
+2678 2678 Hamner Ave Norco,1
+Del Ray,1
+Hume,1
+Terra Bella,1
+Oildale,1
+Upper Lake,1
+North Shore,1
+Redway,1
+Mackenson,1
+Hillsdale,1
+Magnolia Avenue,1
+Unit 240 3110 Chino Ave Unit 240 Chino Hills,1
+Sunset,1
+Dutch Flat,1
+Helendale,1
+Mountain Ranch,1
+Hillcrest,1
+North Park,1
+Meyers,1
+Rio Oso,1
+Grossmont,1
+Garden Valley,1
+Liberty Farms,1
+Treasure Island,1
+Camino,1
+Green Valley Lake,1
+Planada,1
+Hamilton City,1
+West Point,1
+Pine Grove,1
+Foresthill,1
+Armona,1
+Doyle,1
+Dorris,1
+Anza,1
+Smartsville,1
+Glenn,1
+Westmont,1
+Squaw Valley,1
+Natividad,1
+June Lake,1
+San Lucas,1
+Tahoma,1
+Thornton,1
+Tupman,1
+Edenvale,1
+Keeler,1
+La Grange,1
+Gum,1
+Mount Laguna,1
+Lincoln Heights,1
+Clearlake Oaks,1
+Fairbanks Ranch,1
+Yosemite Valley,1
+Sutter Creek,1
+Victor,1
+Kelseyville,1
+Yuba County,1
+Vallecito,1
+Laytonville,1
+Lakehead,1
+Downieville,1
+Clear Lake,1
+Kimball,1
+Rowland,1
+Emigrant Gap,1
+Lake Balboa,1
+Lockwood,1
+Cantil,1
+Haven,1
+Five Points,1
+Glen Avon,1
+Mcarthur,1
+Mar Vista,1
+Kings Beach,1
+Carnelian Bay,1
+Pajaro,1
+Sabre Springs,1
+Allen,1
+Leimert Park,1
+Westmorland,1
+Covelo,1
+Clay,1
+Community Center,1
+Bootjack,1
+Elverta,1
+Santa Rosa Valley,1
+San Benito County,1
+Westlake,1
+Platina,1
+East San Gabriel,1
+North Island,1
+Ivanpah,1
+Lower Lake,1
+Buchanan,1
+Oakmont,1
+Los Alamos,1
+Ludlow,1
+La Habra Heights,1
+Kagel Canyon,1
+Mammoth,1
+Cantua Creek,1
+Mono City,1
+Vandenbrg Afb,1
+Coachella Valley,1
+Loma,1
+Home Gardens,1
+Lytle Creek,1
+North Fork,1
+East Irvine,1
+Nevada County,1
+Old Fig Garden,1
+Valley Vlg,1
+Delta,1
+Milton,1
+Naval Base Point Loma,1
+Richfield,1
+Coast Guard Island,1
+Llano,1
+Mono County,1
+Tehama County,1
+Ranchita,1
+Caruthers,1
+Weitchpec,1
+Mead Valley,1
+Floriston,1
+Linda Vista,1
+Bel Air,1
+Miranda,1
+Crescent,1
+Royal Oaks,1
+Homeland,1
+Temescal,1
+El Nido,1
+Tranquillity,1
+Agua Caliente,1
+Blackhawk,1
+Fort Bidwell,1
+Callahan,1
+Campbellville,1
+Cordova,1
+Calaveras County,1
+Santa Ysabel,1
+Lemoore Nas,1
+Boonville,1
+Empire,1
+Ahwahnee,1
+Rochester,1
+Princeton,1
+Parkway,1
+China Lake Acres,1
+Creston,1
+Wallace,1
+San Nicolas Island,1
+Plumas Lake,1
+Biola,1
+Taft Mosswood,1
+College Heights,1
+Woodland Hls,1
+Hidden Meadows,1
+Plano,1
+Tierrasanta,1
+Springville,1
+Parksdale,1
+Cayucos,1
+Potrero,1
+Port Of Long Beach,1
+Fairview,1
+Baldwin Hills,1
+Arena,1
+Cortez,1
+Samoa,1
+Lake Los Angeles,1
+West Toluca Lake,1

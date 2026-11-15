@@ -1,0 +1,632 @@
+{
+ "final_model": "ridge",
+ "test": {
+  "baseline_title_median": {
+   "n": 15682,
+   "rmse_dollars": 70661,
+   "mae_dollars": 44802,
+   "median_abs_err_dollars": 27772,
+   "r2_log": 0.1711
+  },
+  "ridge": {
+   "n": 15682,
+   "rmse_dollars": 36204,
+   "mae_dollars": 20692,
+   "median_abs_err_dollars": 11249,
+   "r2_log": 0.8358
+  },
+  "lightgbm": {
+   "n": 15682,
+   "rmse_dollars": 36644,
+   "mae_dollars": 20975,
+   "median_abs_err_dollars": 10883,
+   "r2_log": 0.8264
+  }
+ },
+ "test_bay_area": {
+  "baseline_title_median": {
+   "n": 5419,
+   "rmse_dollars": 93589,
+   "mae_dollars": 62970,
+   "median_abs_err_dollars": 34012,
+   "r2_log": -0.0571
+  },
+  "ridge": {
+   "n": 5419,
+   "rmse_dollars": 45776,
+   "mae_dollars": 27629,
+   "median_abs_err_dollars": 15056,
+   "r2_log": 0.8306
+  },
+  "lightgbm": {
+   "n": 5419,
+   "rmse_dollars": 46013,
+   "mae_dollars": 27631,
+   "median_abs_err_dollars": 15134,
+   "r2_log": 0.8299
+  }
+ },
+ "hidden_pay_in_text_test_companies": {
+  "baseline_title_median": {
+   "n": 212,
+   "rmse_dollars": 80874,
+   "mae_dollars": 45203,
+   "median_abs_err_dollars": 26853,
+   "r2_log": 0.2209
+  },
+  "ridge": {
+   "n": 212,
+   "rmse_dollars": 53007,
+   "mae_dollars": 27440,
+   "median_abs_err_dollars": 11973,
+   "r2_log": 0.6822
+  },
+  "lightgbm": {
+   "n": 212,
+   "rmse_dollars": 54957,
+   "mae_dollars": 27243,
+   "median_abs_err_dollars": 11335,
+   "r2_log": 0.6994
+  }
+ },
+ "top_words": [
+  {
+   "direction": "pay up",
+   "feature": "title: psychiatrist",
+   "coefficient": 1.04
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: 10 years",
+   "coefficient": 0.981
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: physician",
+   "coefficient": 0.98
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: dentist",
+   "coefficient": 0.823
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: director",
+   "coefficient": 0.819
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: crna",
+   "coefficient": 0.758
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: board",
+   "coefficient": 0.746
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: years",
+   "coefficient": 0.712
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: ai",
+   "coefficient": 0.693
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: orthodontist",
+   "coefficient": 0.685
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: vp",
+   "coefficient": 0.67
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: 12 years",
+   "coefficient": 0.668
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: svp",
+   "coefficient": 0.638
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: anesthesiologist",
+   "coefficient": 0.62
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: malpractice",
+   "coefficient": 0.604
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: physician",
+   "coefficient": 0.603
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: surgeon",
+   "coefficient": 0.599
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: principal",
+   "coefficient": 0.593
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: practice",
+   "coefficient": 0.587
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: dermatologist",
+   "coefficient": 0.58
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: engineering",
+   "coefficient": 0.577
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: 15 years",
+   "coefficient": 0.561
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: teams",
+   "coefficient": 0.56
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: radiologist",
+   "coefficient": 0.559
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: license",
+   "coefficient": 0.545
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: md",
+   "coefficient": 0.544
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: equity",
+   "coefficient": 0.543
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: medicine",
+   "coefficient": 0.541
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: chief",
+   "coefficient": 0.537
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: board eligible",
+   "coefficient": 0.528
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: pharmacist",
+   "coefficient": 0.528
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: deals",
+   "coefficient": 0.508
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: optometrist",
+   "coefficient": 0.508
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: counsel",
+   "coefficient": 0.503
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: deep",
+   "coefficient": 0.496
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: vice",
+   "coefficient": 0.49
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: medical director",
+   "coefficient": 0.489
+  },
+  {
+   "direction": "pay up",
+   "feature": "title: pediatrician",
+   "coefficient": 0.485
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: relocation",
+   "coefficient": 0.474
+  },
+  {
+   "direction": "pay up",
+   "feature": "desc: years experience",
+   "coefficient": 0.473
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: store",
+   "coefficient": -0.657
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: intern",
+   "coefficient": -0.584
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: high school",
+   "coefficient": -0.487
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: cleaning",
+   "coefficient": -0.444
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: customer service",
+   "coefficient": -0.44
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: assist",
+   "coefficient": -0.42
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: aide",
+   "coefficient": -0.404
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: assistant",
+   "coefficient": -0.398
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: student",
+   "coefficient": -0.384
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: diploma",
+   "coefficient": -0.381
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: clinic setting",
+   "coefficient": -0.381
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: assistant",
+   "coefficient": -0.375
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: security officer",
+   "coefficient": -0.368
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: clean",
+   "coefficient": -0.364
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: shift",
+   "coefficient": -0.361
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: retail",
+   "coefficient": -0.36
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: type time",
+   "coefficient": -0.358
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: discounts",
+   "coefficient": -0.355
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: lmu",
+   "coefficient": -0.346
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: assembler",
+   "coefficient": -0.346
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: driver",
+   "coefficient": -0.344
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: food",
+   "coefficient": -0.337
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: supervision",
+   "coefficient": -0.337
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: restaurant",
+   "coefficient": -0.334
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: youth",
+   "coefficient": -0.328
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: clerk",
+   "coefficient": -0.326
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: fun",
+   "coefficient": -0.325
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: attendant",
+   "coefficient": -0.325
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: check",
+   "coefficient": -0.319
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: entry level",
+   "coefficient": -0.316
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: supervisor",
+   "coefficient": -0.314
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: internship",
+   "coefficient": -0.313
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: tips",
+   "coefficient": -0.312
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: coordinator",
+   "coefficient": -0.31
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: brands",
+   "coefficient": -0.307
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: technician",
+   "coefficient": -0.306
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: years age",
+   "coefficient": -0.305
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: aide",
+   "coefficient": -0.304
+  },
+  {
+   "direction": "pay down",
+   "feature": "title: integration architect",
+   "coefficient": -0.302
+  },
+  {
+   "direction": "pay down",
+   "feature": "desc: duties",
+   "coefficient": -0.3
+  }
+ ],
+ "histogram": {
+  "bin_start": [
+   20000,
+   30000,
+   40000,
+   50000,
+   60000,
+   70000,
+   80000,
+   90000,
+   100000,
+   110000,
+   120000,
+   130000,
+   140000,
+   150000,
+   160000,
+   170000,
+   180000,
+   190000,
+   200000,
+   210000,
+   220000,
+   230000,
+   240000,
+   250000,
+   260000,
+   270000,
+   280000,
+   290000,
+   300000,
+   310000
+  ],
+  "bin_width": 10000,
+  "note": "Bay Area. Top bin includes everything above it.",
+  "hidden_predicted": [
+   0.0,
+   0.0236,
+   0.0869,
+   0.0757,
+   0.058,
+   0.0573,
+   0.0511,
+   0.0512,
+   0.0591,
+   0.057,
+   0.0518,
+   0.0611,
+   0.0501,
+   0.0435,
+   0.0415,
+   0.0442,
+   0.0366,
+   0.0271,
+   0.0263,
+   0.022,
+   0.0166,
+   0.0159,
+   0.0122,
+   0.0083,
+   0.0054,
+   0.0044,
+   0.0042,
+   0.0019,
+   0.001,
+   0.0059
+  ],
+  "shown_actual": [
+   0.0005,
+   0.0467,
+   0.1283,
+   0.0803,
+   0.0543,
+   0.0455,
+   0.0387,
+   0.034,
+   0.0353,
+   0.0294,
+   0.0311,
+   0.0323,
+   0.0311,
+   0.037,
+   0.0334,
+   0.0405,
+   0.0336,
+   0.0362,
+   0.032,
+   0.0363,
+   0.027,
+   0.0231,
+   0.0173,
+   0.0214,
+   0.0107,
+   0.0135,
+   0.0078,
+   0.0066,
+   0.0068,
+   0.0294
+  ]
+ },
+ "by_family": [
+  {
+   "job_family": "other",
+   "n": 4144,
+   "median_predicted_pay": 108475,
+   "burdened_city_1br": 0.5922,
+   "burdened_county_1br": 0.5876,
+   "burdened_city_2br": 0.8156
+  },
+  {
+   "job_family": "tech",
+   "n": 1678,
+   "median_predicted_pay": 159482,
+   "burdened_city_1br": 0.2688,
+   "burdened_county_1br": 0.2509,
+   "burdened_city_2br": 0.6335
+  },
+  {
+   "job_family": "healthcare",
+   "n": 463,
+   "median_predicted_pay": 112079,
+   "burdened_city_1br": 0.5551,
+   "burdened_county_1br": 0.5551,
+   "burdened_city_2br": 0.743
+  },
+  {
+   "job_family": "food service",
+   "n": 299,
+   "median_predicted_pay": 43838,
+   "burdened_city_1br": 0.9866,
+   "burdened_county_1br": 0.99,
+   "burdened_city_2br": 0.9967
+  },
+  {
+   "job_family": "retail",
+   "n": 148,
+   "median_predicted_pay": 44994,
+   "burdened_city_1br": 0.9459,
+   "burdened_county_1br": 0.9459,
+   "burdened_city_2br": 0.9662
+  },
+  {
+   "job_family": "education",
+   "n": 136,
+   "median_predicted_pay": 72816,
+   "burdened_city_1br": 0.8162,
+   "burdened_county_1br": 0.8971,
+   "burdened_city_2br": 0.9485
+  },
+  {
+   "job_family": "warehouse",
+   "n": 118,
+   "median_predicted_pay": 51132,
+   "burdened_city_1br": 0.9576,
+   "burdened_county_1br": 0.9492,
+   "burdened_city_2br": 0.9831
+  }
+ ]
+}

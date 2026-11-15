@@ -1,0 +1,91 @@
+job_family,city,n_postings,pay_p10,pay_p50,pay_p90,monthly_rent,rent_source,rent_share_at_p10,rent_share_at_p50,rent_share_at_p90,share_burdened
+education,San Francisco,26,58646,83031,145156,3500.0,city asking rent,0.716,0.506,0.289,0.885
+education,Vallejo,15,61913,73137,100090,1800.0,city asking rent,0.349,0.295,0.216,0.4
+education,San Jose,10,55698,58600,71146,3010.0,city asking rent,0.648,0.616,0.508,1.0
+food service,San Jose,54,40345,43308,58261,3010.0,city asking rent,0.895,0.834,0.62,0.981
+food service,San Francisco,45,45008,52167,85917,3500.0,city asking rent,0.933,0.805,0.489,0.978
+food service,Palo Alto,12,44280,48884,55353,3075.0,city asking rent,0.833,0.755,0.667,0.917
+healthcare,San Francisco,117,62230,118418,202895,3500.0,city asking rent,0.675,0.355,0.207,0.675
+healthcare,San Jose,58,57882,111881,196527,3010.0,city asking rent,0.624,0.323,0.184,0.569
+healthcare,Oakland,28,56954,114434,162764,2295.0,city asking rent,0.484,0.241,0.169,0.464
+healthcare,Walnut Creek,21,79364,123528,161594,2495.0,city asking rent,0.377,0.242,0.185,0.238
+healthcare,Fairfield,15,55138,117300,178607,2099.0,city asking rent,0.457,0.215,0.141,0.267
+healthcare,San Mateo,13,55329,119522,156652,3307.0,city asking rent,0.717,0.332,0.253,0.615
+healthcare,Santa Rosa,13,56497,91874,182254,2290.0,city asking rent,0.486,0.299,0.151,0.462
+healthcare,Fremont,12,49582,77646,110249,2608.0,city asking rent,0.631,0.403,0.284,0.667
+healthcare,Santa Clara,11,65248,161985,228777,3540.0,city asking rent,0.651,0.262,0.186,0.455
+healthcare,Sunnyvale,11,58399,97462,178954,3270.5,city asking rent,0.672,0.403,0.219,0.727
+other,San Francisco,1354,69070,138344,226586,3500.0,city asking rent,0.608,0.304,0.185,0.505
+other,San Jose,566,56578,113306,198753,3010.0,city asking rent,0.638,0.319,0.182,0.542
+other,Santa Clara,246,64230,131982,218927,3540.0,city asking rent,0.661,0.322,0.194,0.541
+other,Palo Alto,156,73979,134766,220275,3075.0,city asking rent,0.499,0.274,0.168,0.365
+other,Sunnyvale,128,59838,117480,190277,3270.5,city asking rent,0.656,0.334,0.206,0.617
+other,Oakland,125,44929,81821,144187,2295.0,city asking rent,0.613,0.337,0.191,0.576
+other,Fremont,113,47952,81717,142185,2608.0,city asking rent,0.653,0.383,0.22,0.69
+other,Mountain View,70,76506,150862,220791,3972.0,city asking rent,0.623,0.316,0.216,0.543
+other,Milpitas,68,62328,125372,187146,2992.0,city asking rent,0.576,0.286,0.192,0.441
+other,Redwood City,60,62804,135265,211294,3621.0,city asking rent,0.692,0.321,0.206,0.583
+other,Walnut Creek,57,53000,88591,138605,2495.0,city asking rent,0.565,0.338,0.216,0.614
+other,San Mateo,53,51301,104337,178825,3307.0,city asking rent,0.774,0.38,0.222,0.66
+other,Hayward,52,47697,75013,139130,2200.0,city asking rent,0.553,0.352,0.19,0.577
+other,Pleasanton,50,52642,108656,148972,2496.0,city asking rent,0.569,0.276,0.201,0.4
+other,Concord,47,41634,52785,105330,1950.0,city asking rent,0.562,0.443,0.222,0.787
+other,Menlo Park,46,67162,124522,229092,3727.0,city asking rent,0.666,0.359,0.195,0.652
+other,Napa,43,42212,55778,92946,2341.0,city asking rent,0.666,0.504,0.302,0.884
+other,Berkeley,39,58236,87738,171334,2450.0,city asking rent,0.505,0.335,0.172,0.564
+other,Livermore,38,47037,70544,104469,2384.5,city asking rent,0.608,0.406,0.274,0.789
+other,Alameda,37,44595,93674,159055,2859.0,city asking rent,0.769,0.366,0.216,0.622
+other,San Rafael,36,45499,74318,110435,2565.5,city asking rent,0.677,0.414,0.279,0.861
+other,Foster City,34,55433,104568,230973,3447.0,city asking rent,0.746,0.396,0.179,0.676
+other,Santa Rosa,31,48439,71572,106889,2290.0,city asking rent,0.567,0.384,0.257,0.774
+other,San Leandro,29,46534,56505,137315,2145.0,city asking rent,0.553,0.456,0.187,0.759
+other,South San Francisco,27,41244,104771,140520,3516.5,city asking rent,1.023,0.403,0.3,0.889
+other,Cupertino,25,67393,113179,165698,3265.5,city asking rent,0.581,0.346,0.236,0.56
+other,San Carlos,24,57724,89550,146124,4076.5,city asking rent,0.847,0.546,0.335,0.917
+other,Tracy,24,46122,56290,94299,2415.0,county median,0.628,0.515,0.307,0.875
+other,San Ramon,23,52523,89509,127841,2427.0,city asking rent,0.555,0.325,0.228,0.565
+other,Campbell,22,48819,77840,115802,2788.5,city asking rent,0.685,0.43,0.289,0.818
+other,Los Gatos,22,69585,81232,100204,3324.0,city asking rent,0.573,0.491,0.398,0.909
+other,Morgan Hill,21,47682,70752,107752,3065.0,city asking rent,0.771,0.52,0.341,0.905
+other,Brisbane,19,66647,102762,191625,3379.0,county median,0.608,0.395,0.212,0.842
+other,Emeryville,19,65904,90675,132749,2873.5,city asking rent,0.523,0.38,0.26,0.737
+other,Richmond,19,49017,61024,95788,2196.0,city asking rent,0.538,0.432,0.275,0.842
+other,Vacaville,19,46740,104773,130171,2150.5,city asking rent,0.552,0.246,0.198,0.316
+other,Burlingame,18,48361,74806,137205,3826.0,city asking rent,0.949,0.614,0.335,1.0
+other,Sonoma,18,45395,57346,85822,2301.0,county median,0.608,0.481,0.322,0.889
+other,Novato,17,44480,54673,104700,2972.5,city asking rent,0.802,0.652,0.341,0.882
+other,Petaluma,17,45467,60520,93102,2496.0,city asking rent,0.659,0.495,0.322,0.941
+other,Vallejo,16,44202,56242,103955,1800.0,city asking rent,0.489,0.384,0.208,0.688
+other,Fairfield,15,53446,78828,158160,2099.0,city asking rent,0.471,0.32,0.159,0.667
+other,Davis,14,43526,51413,82227,2025.0,county median,0.558,0.473,0.296,0.857
+other,Antioch,13,49200,51584,84425,1915.0,city asking rent,0.467,0.445,0.272,0.846
+other,Pittsburg,13,41902,58177,74313,1965.0,city asking rent,0.563,0.405,0.317,0.923
+other,Newark,12,57280,78966,122075,2681.0,city asking rent,0.562,0.407,0.264,0.833
+other,Stanford,12,61727,85864,101319,3175.0,county median,0.617,0.444,0.376,0.917
+other,Union City,12,42147,52000,82756,2295.0,city asking rent,0.653,0.53,0.333,0.917
+other,Brentwood,11,46499,49251,61723,2499.5,city asking rent,0.645,0.609,0.486,0.909
+other,Dublin,11,32996,77301,134989,2625.0,city asking rent,0.955,0.407,0.233,0.636
+other,Lathrop,11,41760,46190,84829,2415.0,county median,0.694,0.627,0.342,0.909
+other,Rohnert Park,11,46733,50770,79623,2096.5,city asking rent,0.538,0.496,0.316,1.0
+retail,San Francisco,23,41213,63819,159922,3500.0,city asking rent,1.019,0.658,0.263,0.826
+retail,San Jose,15,38302,49528,62358,3010.0,city asking rent,0.943,0.729,0.579,0.933
+tech,San Francisco,617,113961,170083,229257,3500.0,city asking rent,0.369,0.247,0.183,0.259
+tech,San Jose,250,100987,162582,238580,3010.0,city asking rent,0.358,0.222,0.151,0.228
+tech,Santa Clara,136,93794,170601,243499,3540.0,city asking rent,0.453,0.249,0.174,0.368
+tech,Palo Alto,116,113476,176223,246523,3075.0,city asking rent,0.325,0.209,0.15,0.164
+tech,Sunnyvale,81,98490,150228,207634,3270.5,city asking rent,0.398,0.261,0.189,0.309
+tech,Fremont,58,91156,127002,160197,2608.0,city asking rent,0.343,0.246,0.195,0.207
+tech,Mountain View,58,111092,182292,240282,3972.0,city asking rent,0.429,0.261,0.198,0.328
+tech,Pleasanton,41,80443,127476,180030,2496.0,city asking rent,0.372,0.235,0.166,0.244
+tech,San Mateo,34,113394,150555,196788,3307.0,city asking rent,0.35,0.264,0.202,0.235
+tech,Redwood City,28,106225,178065,245374,3621.0,city asking rent,0.409,0.244,0.177,0.321
+tech,Oakland,27,92760,122683,173800,2295.0,city asking rent,0.297,0.224,0.158,0.111
+tech,Menlo Park,25,111246,142085,196457,3727.0,city asking rent,0.402,0.315,0.228,0.56
+tech,Milpitas,15,122935,155821,220196,2992.0,city asking rent,0.292,0.23,0.163,0.133
+tech,Foster City,14,63877,134796,234998,3447.0,city asking rent,0.648,0.307,0.176,0.571
+tech,Cupertino,12,113230,166898,222692,3265.5,city asking rent,0.346,0.235,0.176,0.167
+tech,Berkeley,11,120838,146450,203705,2450.0,city asking rent,0.243,0.201,0.144,0.091
+tech,Burlingame,10,108271,120042,157664,3826.0,city asking rent,0.424,0.382,0.291,0.8
+tech,San Ramon,10,95125,112838,172169,2427.0,city asking rent,0.306,0.258,0.169,0.2
+tech,South San Francisco,10,121978,176352,214631,3516.5,city asking rent,0.346,0.239,0.197,0.2
+warehouse,San Francisco,15,50121,61159,99234,3500.0,city asking rent,0.838,0.687,0.423,0.933

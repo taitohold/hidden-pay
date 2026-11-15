@@ -1,0 +1,8 @@
+job_family,n,median_predicted_pay,burdened_city_1br,burdened_county_1br,burdened_city_2br
+other,4144,108475,0.5922,0.5876,0.8156
+tech,1678,159482,0.2688,0.2509,0.6335
+healthcare,463,112079,0.5551,0.5551,0.743
+food service,299,43838,0.9866,0.99,0.9967
+retail,148,44994,0.9459,0.9459,0.9662
+education,136,72816,0.8162,0.8971,0.9485
+warehouse,118,51132,0.9576,0.9492,0.9831
