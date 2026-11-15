@@ -1,0 +1,851 @@
+{
+ "classifier": {
+  "target": "posting has no salary field",
+  "train_rows": 97044,
+  "val_rows": 20445,
+  "test_rows": 18569,
+  "n_features": 123995,
+  "tuning": [
+   {
+    "C": 0.03,
+    "val_auc": 0.7835
+   },
+   {
+    "C": 0.1,
+    "val_auc": 0.8044
+   },
+   {
+    "C": 0.3,
+    "val_auc": 0.811
+   },
+   {
+    "C": 1.0,
+    "val_auc": 0.8081
+   }
+  ],
+  "chosen_C": 0.3,
+  "threshold": 0.59,
+  "no_description_model": {
+   "tuning": [
+    {
+     "C": 0.03,
+     "val_auc": 0.6815
+    },
+    {
+     "C": 0.1,
+     "val_auc": 0.6833
+    },
+    {
+     "C": 0.3,
+     "val_auc": 0.6805
+    },
+    {
+     "C": 1.0,
+     "val_auc": 0.6718
+    }
+   ],
+   "chosen_C": 0.1,
+   "threshold": 0.66
+  },
+  "validation": {
+   "n": 20445,
+   "share_hiding": 0.1383,
+   "auc": 0.811,
+   "precision": 0.4791,
+   "recall": 0.5095,
+   "macro_f1": 0.7048
+  },
+  "test": {
+   "baseline_majority": {
+    "n": 18569,
+    "share_hiding": 0.1463,
+    "auc": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "macro_f1": 0.4605
+   },
+   "logistic_regression_no_description": {
+    "n": 18569,
+    "share_hiding": 0.1463,
+    "auc": 0.6987,
+    "precision": 0.3349,
+    "recall": 0.2672,
+    "macro_f1": 0.5954
+   },
+   "logistic_regression": {
+    "n": 18569,
+    "share_hiding": 0.1463,
+    "auc": 0.8396,
+    "precision": 0.4964,
+    "recall": 0.5355,
+    "macro_f1": 0.7141
+   }
+  },
+  "test_bay_area": {
+   "baseline_majority": {
+    "n": 6403,
+    "share_hiding": 0.1451,
+    "auc": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "macro_f1": 0.4609
+   },
+   "logistic_regression_no_description": {
+    "n": 6403,
+    "share_hiding": 0.1451,
+    "auc": 0.6957,
+    "precision": 0.3254,
+    "recall": 0.31,
+    "macro_f1": 0.6025
+   },
+   "logistic_regression": {
+    "n": 6403,
+    "share_hiding": 0.1451,
+    "auc": 0.8443,
+    "precision": 0.4856,
+    "recall": 0.564,
+    "macro_f1": 0.7165
+   }
+  }
+ },
+ "salary_model": {
+  "target": "log(annual salary midpoint)",
+  "train_rows": 82003,
+  "val_rows": 17488,
+  "test_rows": 15682,
+  "title_baseline_coverage_test": 0.2965,
+  "ridge_tuning": [
+   {
+    "alpha": 0.3,
+    "val_rmse_log": 0.2703
+   },
+   {
+    "alpha": 1.0,
+    "val_rmse_log": 0.2521
+   },
+   {
+    "alpha": 3.0,
+    "val_rmse_log": 0.247
+   },
+   {
+    "alpha": 10.0,
+    "val_rmse_log": 0.2535
+   }
+  ],
+  "ridge_alpha": 3.0,
+  "lightgbm_best_iteration": 2997,
+  "final_model_chosen_on_validation": "ridge",
+  "validation": {
+   "baseline_title_median": {
+    "n": 17488,
+    "rmse_dollars": 71246,
+    "mae_dollars": 46657,
+    "median_abs_err_dollars": 29852,
+    "r2_log": 0.1877
+   },
+   "ridge": {
+    "n": 17488,
+    "rmse_dollars": 33981,
+    "mae_dollars": 19997,
+    "median_abs_err_dollars": 10596,
+    "r2_log": 0.8526
+   },
+   "lightgbm": {
+    "n": 17488,
+    "rmse_dollars": 34910,
+    "mae_dollars": 20171,
+    "median_abs_err_dollars": 10363,
+    "r2_log": 0.8455
+   }
+  },
+  "test": {
+   "baseline_title_median": {
+    "n": 15682,
+    "rmse_dollars": 70661,
+    "mae_dollars": 44802,
+    "median_abs_err_dollars": 27772,
+    "r2_log": 0.1711
+   },
+   "ridge": {
+    "n": 15682,
+    "rmse_dollars": 36204,
+    "mae_dollars": 20692,
+    "median_abs_err_dollars": 11249,
+    "r2_log": 0.8358
+   },
+   "lightgbm": {
+    "n": 15682,
+    "rmse_dollars": 36644,
+    "mae_dollars": 20975,
+    "median_abs_err_dollars": 10883,
+    "r2_log": 0.8264
+   }
+  },
+  "test_bay_area": {
+   "baseline_title_median": {
+    "n": 5419,
+    "rmse_dollars": 93589,
+    "mae_dollars": 62970,
+    "median_abs_err_dollars": 34012,
+    "r2_log": -0.0571
+   },
+   "ridge": {
+    "n": 5419,
+    "rmse_dollars": 45776,
+    "mae_dollars": 27629,
+    "median_abs_err_dollars": 15056,
+    "r2_log": 0.8306
+   },
+   "lightgbm": {
+    "n": 5419,
+    "rmse_dollars": 46013,
+    "mae_dollars": 27631,
+    "median_abs_err_dollars": 15134,
+    "r2_log": 0.8299
+   }
+  },
+  "hidden_pay_in_text_test_companies": {
+   "baseline_title_median": {
+    "n": 212,
+    "rmse_dollars": 80874,
+    "mae_dollars": 45203,
+    "median_abs_err_dollars": 26853,
+    "r2_log": 0.2209
+   },
+   "ridge": {
+    "n": 212,
+    "rmse_dollars": 53007,
+    "mae_dollars": 27440,
+    "median_abs_err_dollars": 11973,
+    "r2_log": 0.6822
+   },
+   "lightgbm": {
+    "n": 212,
+    "rmse_dollars": 54957,
+    "mae_dollars": 27243,
+    "median_abs_err_dollars": 11335,
+    "r2_log": 0.6994
+   }
+  },
+  "hidden_pay_in_text_all": {
+   "baseline_title_median": {
+    "n": 1837,
+    "rmse_dollars": 71878,
+    "mae_dollars": 41567,
+    "median_abs_err_dollars": 24652,
+    "r2_log": 0.1986
+   },
+   "ridge": {
+    "n": 1837,
+    "rmse_dollars": 51389,
+    "mae_dollars": 25724,
+    "median_abs_err_dollars": 12173,
+    "r2_log": 0.6195
+   },
+   "lightgbm": {
+    "n": 1837,
+    "rmse_dollars": 49405,
+    "mae_dollars": 25803,
+    "median_abs_err_dollars": 13083,
+    "r2_log": 0.6219
+   }
+  }
+ },
+ "salary_subgroups": [
+  {
+   "dimension": "all",
+   "group": "all test",
+   "n": 15682,
+   "median_salary": 78612,
+   "mae_dollars": 20692,
+   "rmse_dollars": 36204,
+   "r2_log": 0.8358,
+   "median_abs_pct_err": 0.143,
+   "mean_pct_bias": 0.0184,
+   "baseline_mae_dollars": 44802
+  },
+  {
+   "dimension": "region",
+   "group": "Bay Area",
+   "n": 5419,
+   "median_salary": 112500,
+   "mae_dollars": 27629,
+   "rmse_dollars": 45776,
+   "r2_log": 0.8306,
+   "median_abs_pct_err": 0.1523,
+   "mean_pct_bias": -0.0056,
+   "baseline_mae_dollars": 62970
+  },
+  {
+   "dimension": "region",
+   "group": "rest of CA",
+   "n": 10263,
+   "median_salary": 69680,
+   "mae_dollars": 17029,
+   "rmse_dollars": 29939,
+   "r2_log": 0.8175,
+   "median_abs_pct_err": 0.1383,
+   "mean_pct_bias": 0.0311,
+   "baseline_mae_dollars": 35209
+  },
+  {
+   "dimension": "job_family",
+   "group": "education",
+   "n": 391,
+   "median_salary": 58240,
+   "mae_dollars": 18574,
+   "rmse_dollars": 26967,
+   "r2_log": 0.7179,
+   "median_abs_pct_err": 0.1832,
+   "mean_pct_bias": -0.0219,
+   "baseline_mae_dollars": 34990
+  },
+  {
+   "dimension": "job_family",
+   "group": "food service",
+   "n": 791,
+   "median_salary": 43680,
+   "mae_dollars": 7850,
+   "rmse_dollars": 14227,
+   "r2_log": 0.622,
+   "median_abs_pct_err": 0.1072,
+   "mean_pct_bias": 0.0282,
+   "baseline_mae_dollars": 20670
+  },
+  {
+   "dimension": "job_family",
+   "group": "healthcare",
+   "n": 2306,
+   "median_salary": 95000,
+   "mae_dollars": 23501,
+   "rmse_dollars": 41695,
+   "r2_log": 0.8189,
+   "median_abs_pct_err": 0.1477,
+   "mean_pct_bias": 0.0266,
+   "baseline_mae_dollars": 46652
+  },
+  {
+   "dimension": "job_family",
+   "group": "other",
+   "n": 9213,
+   "median_salary": 78780,
+   "mae_dollars": 19572,
+   "rmse_dollars": 33675,
+   "r2_log": 0.8093,
+   "median_abs_pct_err": 0.1446,
+   "mean_pct_bias": 0.0259,
+   "baseline_mae_dollars": 41004
+  },
+  {
+   "dimension": "job_family",
+   "group": "retail",
+   "n": 881,
+   "median_salary": 48880,
+   "mae_dollars": 7266,
+   "rmse_dollars": 11654,
+   "r2_log": 0.4977,
+   "median_abs_pct_err": 0.1156,
+   "mean_pct_bias": 0.0545,
+   "baseline_mae_dollars": 19580
+  },
+  {
+   "dimension": "job_family",
+   "group": "tech",
+   "n": 1654,
+   "median_salary": 180700,
+   "mae_dollars": 39227,
+   "rmse_dollars": 56127,
+   "r2_log": 0.4899,
+   "median_abs_pct_err": 0.157,
+   "mean_pct_bias": -0.0478,
+   "baseline_mae_dollars": 95103
+  },
+  {
+   "dimension": "job_family",
+   "group": "warehouse",
+   "n": 446,
+   "median_salary": 49920,
+   "mae_dollars": 11712,
+   "rmse_dollars": 26938,
+   "r2_log": 0.7355,
+   "median_abs_pct_err": 0.1157,
+   "mean_pct_bias": 0.0142,
+   "baseline_mae_dollars": 28351
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "Contract",
+   "n": 249,
+   "median_salary": 104000,
+   "mae_dollars": 28474,
+   "rmse_dollars": 43727,
+   "r2_log": 0.5667,
+   "median_abs_pct_err": 0.1692,
+   "mean_pct_bias": 0.0669,
+   "baseline_mae_dollars": 46710
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "Full-time",
+   "n": 9472,
+   "median_salary": 90000,
+   "mae_dollars": 21925,
+   "rmse_dollars": 37027,
+   "r2_log": 0.8142,
+   "median_abs_pct_err": 0.1453,
+   "mean_pct_bias": 0.0204,
+   "baseline_mae_dollars": 46165
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "Part-time",
+   "n": 2972,
+   "median_salary": 48880,
+   "mae_dollars": 11331,
+   "rmse_dollars": 23647,
+   "r2_log": 0.7515,
+   "median_abs_pct_err": 0.1213,
+   "mean_pct_bias": 0.0234,
+   "baseline_mae_dollars": 26494
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "Temporary",
+   "n": 180,
+   "median_salary": 55120,
+   "mae_dollars": 18021,
+   "rmse_dollars": 30273,
+   "r2_log": 0.6565,
+   "median_abs_pct_err": 0.1403,
+   "mean_pct_bias": 0.0508,
+   "baseline_mae_dollars": 32963
+  },
+  {
+   "dimension": "job_type_main",
+   "group": "missing",
+   "n": 2578,
+   "median_salary": 114133,
+   "mae_dollars": 26762,
+   "rmse_dollars": 44525,
+   "r2_log": 0.8386,
+   "median_abs_pct_err": 0.1534,
+   "mean_pct_bias": -0.0007,
+   "baseline_mae_dollars": 62325
+  },
+  {
+   "dimension": "city",
+   "group": "Fremont",
+   "n": 240,
+   "median_salary": 120000,
+   "mae_dollars": 33454,
+   "rmse_dollars": 48025,
+   "r2_log": 0.6445,
+   "median_abs_pct_err": 0.208,
+   "mean_pct_bias": -0.1123,
+   "baseline_mae_dollars": 58931
+  },
+  {
+   "dimension": "city",
+   "group": "Los Angeles",
+   "n": 1195,
+   "median_salary": 93413,
+   "mae_dollars": 20604,
+   "rmse_dollars": 31905,
+   "r2_log": 0.799,
+   "median_abs_pct_err": 0.1505,
+   "mean_pct_bias": 0.0114,
+   "baseline_mae_dollars": 43417
+  },
+  {
+   "dimension": "city",
+   "group": "Mountain View",
+   "n": 167,
+   "median_salary": 206100,
+   "mae_dollars": 30445,
+   "rmse_dollars": 41625,
+   "r2_log": 0.7704,
+   "median_abs_pct_err": 0.1224,
+   "mean_pct_bias": -0.0126,
+   "baseline_mae_dollars": 117608
+  },
+  {
+   "dimension": "city",
+   "group": "Oakland",
+   "n": 164,
+   "median_salary": 97495,
+   "mae_dollars": 21017,
+   "rmse_dollars": 32208,
+   "r2_log": 0.8137,
+   "median_abs_pct_err": 0.1401,
+   "mean_pct_bias": -0.0006,
+   "baseline_mae_dollars": 45744
+  },
+  {
+   "dimension": "city",
+   "group": "Palo Alto",
+   "n": 418,
+   "median_salary": 183150,
+   "mae_dollars": 57372,
+   "rmse_dollars": 75567,
+   "r2_log": 0.3943,
+   "median_abs_pct_err": 0.2815,
+   "mean_pct_bias": -0.1822,
+   "baseline_mae_dollars": 101555
+  },
+  {
+   "dimension": "city",
+   "group": "San Diego",
+   "n": 789,
+   "median_salary": 102500,
+   "mae_dollars": 18212,
+   "rmse_dollars": 26908,
+   "r2_log": 0.8749,
+   "median_abs_pct_err": 0.1323,
+   "mean_pct_bias": 0.0133,
+   "baseline_mae_dollars": 52153
+  },
+  {
+   "dimension": "city",
+   "group": "San Francisco",
+   "n": 1359,
+   "median_salary": 165000,
+   "mae_dollars": 35746,
+   "rmse_dollars": 55626,
+   "r2_log": 0.8023,
+   "median_abs_pct_err": 0.1611,
+   "mean_pct_bias": 0.0059,
+   "baseline_mae_dollars": 89080
+  },
+  {
+   "dimension": "city",
+   "group": "San Jose",
+   "n": 678,
+   "median_salary": 115000,
+   "mae_dollars": 23271,
+   "rmse_dollars": 41076,
+   "r2_log": 0.84,
+   "median_abs_pct_err": 0.1357,
+   "mean_pct_bias": 0.0151,
+   "baseline_mae_dollars": 55227
+  },
+  {
+   "dimension": "city",
+   "group": "Santa Clara",
+   "n": 189,
+   "median_salary": 88400,
+   "mae_dollars": 22863,
+   "rmse_dollars": 38420,
+   "r2_log": 0.8195,
+   "median_abs_pct_err": 0.1356,
+   "mean_pct_bias": 0.0583,
+   "baseline_mae_dollars": 49186
+  },
+  {
+   "dimension": "city",
+   "group": "Sunnyvale",
+   "n": 230,
+   "median_salary": 175500,
+   "mae_dollars": 23342,
+   "rmse_dollars": 33551,
+   "r2_log": 0.8316,
+   "median_abs_pct_err": 0.1124,
+   "mean_pct_bias": -0.0268,
+   "baseline_mae_dollars": 72349
+  }
+ ],
+ "salary_error_by_propensity": [
+  {
+   "propensity_quintile": 1,
+   "mean_p_hide": 0.0606,
+   "n": 3137,
+   "median_salary": 56160,
+   "mae_dollars": 13104,
+   "rmse_dollars": 21352,
+   "r2_log": 0.8481,
+   "median_abs_pct_err": 0.1272,
+   "mean_pct_bias": 0.0324,
+   "baseline_mae_dollars": 29601
+  },
+  {
+   "propensity_quintile": 2,
+   "mean_p_hide": 0.1458,
+   "n": 3136,
+   "median_salary": 80080,
+   "mae_dollars": 19463,
+   "rmse_dollars": 33308,
+   "r2_log": 0.8489,
+   "median_abs_pct_err": 0.1383,
+   "mean_pct_bias": 0.0104,
+   "baseline_mae_dollars": 46575
+  },
+  {
+   "propensity_quintile": 3,
+   "mean_p_hide": 0.2339,
+   "n": 3136,
+   "median_salary": 87500,
+   "mae_dollars": 22942,
+   "rmse_dollars": 40626,
+   "r2_log": 0.8287,
+   "median_abs_pct_err": 0.1403,
+   "mean_pct_bias": 0.0068,
+   "baseline_mae_dollars": 50460
+  },
+  {
+   "propensity_quintile": 4,
+   "mean_p_hide": 0.3601,
+   "n": 3136,
+   "median_salary": 90000,
+   "mae_dollars": 22124,
+   "rmse_dollars": 38471,
+   "r2_log": 0.8321,
+   "median_abs_pct_err": 0.1442,
+   "mean_pct_bias": 0.017,
+   "baseline_mae_dollars": 47894
+  },
+  {
+   "propensity_quintile": 5,
+   "mean_p_hide": 0.6,
+   "n": 3137,
+   "median_salary": 90000,
+   "mae_dollars": 25825,
+   "rmse_dollars": 43103,
+   "r2_log": 0.8029,
+   "median_abs_pct_err": 0.1646,
+   "mean_pct_bias": 0.0256,
+   "baseline_mae_dollars": 49482
+  }
+ ],
+ "failures": [
+  {
+   "job_title": "Housekeeper",
+   "city": "Napa",
+   "job_type": "Full-time",
+   "job_family": "other",
+   "actual_salary": 364000.0,
+   "predicted_salary": 35275.0,
+   "snippet": "Overview: We create communities where employees thrive in their work, helping our residents thrive in their homes. Atria Senior Living\u2019s family of brands has op"
+  },
+  {
+   "job_title": "Chief Cloud Architect",
+   "city": "Downey",
+   "job_type": "Full-time, Contract",
+   "job_family": "tech",
+   "actual_salary": 23400.0,
+   "predicted_salary": 175593.0,
+   "snippet": "This position requires - Clear Background, Drug Test, and Education Check. Must be authorized to work in the US for any employer without Sponsorship. (Principal"
+  },
+  {
+   "job_title": "Urologist",
+   "city": "Woodland",
+   "job_type": "Full-time",
+   "job_family": "other",
+   "actual_salary": 575000.0,
+   "predicted_salary": 108101.0,
+   "snippet": "Location: Woodland, CA Multispecialty group \u2013 150+ providers. Group has been in existence for over 100 years Strong retention!! Some of our providers have been "
+  },
+  {
+   "job_title": "RN Manager, Cardiac Procedural Services",
+   "city": "Fresno",
+   "job_type": "Full-time",
+   "job_family": "healthcare",
+   "actual_salary": 24337.3,
+   "predicted_salary": 127558.0,
+   "snippet": "Overview: Lead with purpose in a high impact cardiovascular leadership role at Fresno Heart & Surgical Hospital. As the RN Manager of Cardiac Procedural Service"
+  },
+  {
+   "job_title": "Server",
+   "city": "Napa",
+   "job_type": "Part-time",
+   "job_family": "food service",
+   "actual_salary": 277576.0,
+   "predicted_salary": 58250.0,
+   "snippet": "Job Description The Rutherford Grill is currently seeking exceptional candidates to join our service team. We are searching for friendly, energetic, highly moti"
+  },
+  {
+   "job_title": "Recruiter / Sales Associate",
+   "city": "Santa Ana",
+   "job_type": "Part-time",
+   "job_family": "retail",
+   "actual_salary": 208000.0,
+   "predicted_salary": 46045.0,
+   "snippet": "Job Overview We are seeking a motivated and dynamic Sales Associate to join our team. The ideal candidate will possess a strong background in sales and employee"
+  },
+  {
+   "job_title": "Medical Director - Physician",
+   "city": "Studio City",
+   "job_type": "Part-time, Full-time, Contract",
+   "job_family": "healthcare",
+   "actual_salary": 118531.74,
+   "predicted_salary": 532381.0,
+   "snippet": "Job Overview Medical Director / Supervising Physician Position Type: Medical Director / Supervising Physician Location: NOHO/ LOS ANEGLESEmployment Type: [Part-"
+  },
+  {
+   "job_title": "Plumbing Designer",
+   "city": "Long Beach",
+   "job_type": "Part-time",
+   "job_family": "other",
+   "actual_salary": 416000.0,
+   "predicted_salary": 94032.0,
+   "snippet": "Perform a certified plumbing designer review of Veteran Affairs health care facilities Utility Drawings to Certify As-Built. A total of 8 facilities will be rev"
+  },
+  {
+   "job_title": "Mechanical Engineer",
+   "city": "Long Beach",
+   "job_type": "Part-time",
+   "job_family": "other",
+   "actual_salary": 416000.0,
+   "predicted_salary": 106807.0,
+   "snippet": "The Mechanical Engineer will perform annual review of Consolidated Water Utilities Management Plan documents to ensure structure and contents are aligned with V"
+  },
+  {
+   "job_title": "Gastroenterologist",
+   "city": "Camarillo",
+   "job_type": null,
+   "job_family": "other",
+   "actual_salary": 475000.0,
+   "predicted_salary": 123873.0,
+   "snippet": "Gastroenterologist COMPANY DESCRIPTION Unio Health Partners (UHP) is a highly differentiated physician practice management platform with the goal of transformin"
+  },
+  {
+   "job_title": "Physical Therapist - Home Health Visits - San Gabriel Valley West",
+   "city": "Alhambra",
+   "job_type": "Contract",
+   "job_family": "healthcare",
+   "actual_salary": 31200.0,
+   "predicted_salary": 118460.0,
+   "snippet": "Home Health Links is building PT coverage in San Gabriel Valley West. This position is intended for therapists who want flexible home health visit volume, local"
+  },
+  {
+   "job_title": "Urologist",
+   "city": "Redding",
+   "job_type": "Full-time",
+   "job_family": "other",
+   "actual_salary": 450000.0,
+   "predicted_salary": 120005.0,
+   "snippet": "Opportunity to Join a Thriving Private Practice with Collaborative Colleagues, a well-established private practice serving the community for over 60 years, is s"
+  },
+  {
+   "job_title": "Physical Therapist Staff for a month (1 month)",
+   "city": "Stockton",
+   "job_type": "Temporary, Part-time, Contract, Per diem",
+   "job_family": "healthcare",
+   "actual_salary": 33800.0,
+   "predicted_salary": 126563.0,
+   "snippet": "Job Summary We are seeking a dedicated and energetic Physical Therapist Staff member to join our team for a one-month assignment. In this role, you will provide"
+  },
+  {
+   "job_title": "PT Home Health \u2013 Start of Care | AI-Powered OASIS (15 Minutes)",
+   "city": "Burbank",
+   "job_type": "Contract",
+   "job_family": "tech",
+   "actual_salary": 35750.0,
+   "predicted_salary": 131084.0,
+   "snippet": "Company Description Home Health Links is one of California\u2019s leading providers of home health therapy services, offering expert physical therapy, occupational t"
+  },
+  {
+   "job_title": "Hair Stylist/Barber",
+   "city": "Irvine",
+   "job_type": "Contract",
+   "job_family": "other",
+   "actual_salary": 23920.0,
+   "predicted_salary": 86335.0,
+   "snippet": "Luxury Salon Chair Rental Available \u2013 Irvine, CAChair Rental: Join one of Irvine\u2019s premier salon environments and build your business alongside a talented team "
+  },
+  {
+   "job_title": "Senior Loan Officer",
+   "city": "Irvine",
+   "job_type": "Full-time",
+   "job_family": "other",
+   "actual_salary": 287500.0,
+   "predicted_salary": 80966.0,
+   "snippet": "MUST RESIDE IN SOUTHERN CALIFORNIALoanleaders of America Come join our team!! We have loan officers that have been with us for over 20 years. We are a great com"
+  },
+  {
+   "job_title": "Psychiatrist Medical Director",
+   "city": "Los Angeles",
+   "job_type": "Part-time",
+   "job_family": "healthcare",
+   "actual_salary": 82600.0,
+   "predicted_salary": 292203.0,
+   "snippet": "Psychiatrist / Medical Director Part-Time : Part-Time / 8 hours per week (Monday to Friday : Flexible) Perks: Supportive, fun and friendly team environment! ***"
+  },
+  {
+   "job_title": "Gastroenterologist",
+   "city": "Tarzana",
+   "job_type": null,
+   "job_family": "other",
+   "actual_salary": 462500.0,
+   "predicted_salary": 130776.0,
+   "snippet": "Gastroenterologist COMPANY DESCRIPTION Unio Health Partners (UHP) is a highly differentiated physician practice management platform with the goal of transformin"
+  },
+  {
+   "job_title": "CDL-A Team Company Drivers \u2013 $0.95 CPM | 6,000+ Miles/Week / New 2027 Trucks",
+   "city": "Ontario",
+   "job_type": "Full-time",
+   "job_family": "warehouse",
+   "actual_salary": 312000.0,
+   "predicted_salary": 90846.0,
+   "snippet": "CDL-A Team Company Drivers \u2013 CPM | 6,000+ Miles Weekly Join our growing team! We are hiring professional CDL-A Team Company Drivers who are looking for consiste"
+  },
+  {
+   "job_title": "Sell Today \u2192 Install This Week \u2192 Get Paid The NEXT day",
+   "city": "Unknown",
+   "job_type": "Contract",
+   "job_family": "other",
+   "actual_salary": 350000.0,
+   "predicted_salary": 103635.0,
+   "snippet": "If you're currently selling solar in California, you already know the industry has a timing problem.-Projects take months.-Commissions get delayed.-Great reps l"
+  }
+ ],
+ "data": {
+  "rows_raw": 140816,
+  "rows_after_dedupe": 136058,
+  "duplicates_removed": 4758,
+  "has_salary": 116190,
+  "no_salary": 19868,
+  "share_no_salary": 0.146,
+  "salary_field_unparseable": 183,
+  "salary_out_of_range_dropped": 834,
+  "salary_range_bounds": [
+   20000,
+   600000
+  ],
+  "salary_usable_for_model": 115173,
+  "salary_period_counts": {
+   "hour": 62417,
+   "year": 50979,
+   "month": 1412,
+   "week": 855,
+   "day": 344
+  },
+  "pay_in_text": 1837,
+  "share_of_no_salary_with_pay_in_text": 0.0925,
+  "has_salary_and_pay_in_description": 80960,
+  "titles_containing_pay": 1493,
+  "n_cities": 1204,
+  "bay_area_rows": 45979,
+  "bay_area_no_salary": 6986,
+  "bay_area_share_no_salary": 0.1519,
+  "rest_of_ca_share_no_salary": 0.143,
+  "bay_area_salary_usable": 38700,
+  "bay_area_pay_in_text": 514,
+  "split_rows": {
+   "train": 97044,
+   "val": 20445,
+   "test": 18569
+  },
+  "split_companies": {
+   "test": 5317,
+   "train": 24808,
+   "val": 5316
+  }
+ },
+ "limitations": [
+  "Selection bias: employers that disclose pay may pay differently from those that do not, so pay for hidden-pay postings is an estimate, not a fact. Model error rises with a posting's predicted probability of hiding pay, and is higher on postings whose pay we could read from the description.",
+  "A missing salary field is not proof of a legal violation: small employers are exempt from SB 1162, and the scrape may have missed pay shown elsewhere on the page.",
+  "Zillow asking rents are for units listed now, not what current tenants pay.",
+  "Rent burden uses gross pay, not take-home, and assumes full-time hours (hourly x 2080).",
+  "The models are trained on postings from all of California; results are reported for the Bay Area.",
+  "Job families come from title keywords; more than half of postings fall in 'other'."
+ ]
+}

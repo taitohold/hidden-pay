@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hidden Pay — Bay Area job postings that don't show salary</title>
+<meta name="description" content="Which Bay Area job postings hide pay, what those jobs likely pay, and whether that covers local rent.">
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+  :root {
+    --bg: #f7f5f0; --surface: #fcfcfb; --ink: #14130f; --ink-2: #52514e; --ink-3: #85837c;
+    --rule: #dedbd2; --hidden: #2a78d6; --shown: #eb6834; --accent-soft: #e6effa;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--sans); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  nav { position: sticky; top: 0; z-index: 5; background: rgba(247,245,240,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
+  nav .wrap { display: flex; gap: 20px; align-items: center; height: 52px; overflow-x: auto; white-space: nowrap; }
+  nav b { font-family: var(--serif); font-size: 19px; margin-right: auto; }
+  nav a { color: var(--ink-2); text-decoration: none; font-size: 14px; }
+  nav a:hover { color: var(--ink); }
+  header { padding: 72px 0 40px; }
+  .eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 14px; }
+  h1 { font: 600 clamp(38px, 6.4vw, 68px)/1.05 var(--serif); margin: 0 0 22px; letter-spacing: -.01em; max-width: 15em; }
+  h1 em { font-style: normal; color: var(--hidden); }
+  .lede { font-size: 20px; color: var(--ink-2); max-width: 40em; margin: 0; }
+  section { padding: 56px 0; border-top: 1px solid var(--rule); }
+  h2 { font: 600 clamp(27px, 3.6vw, 36px)/1.15 var(--serif); margin: 0 0 10px; }
+  h3 { font: 600 16px/1.3 var(--sans); margin: 0 0 4px; }
+  .sub { color: var(--ink-2); max-width: 44em; margin: 0 0 28px; }
+  .note { font-size: 14px; color: var(--ink-3); margin: 8px 0 0; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 40px; }
+  .tile { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; }
+  .tile .num { font: 600 38px/1.1 var(--serif); font-variant-numeric: tabular-nums; }
+  .tile .lab { font-size: 14px; color: var(--ink-2); margin-top: 6px; line-height: 1.4; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } header { padding-top: 44px; } }
+  .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 20px 20px 12px; min-width: 0; }
+  .card p.cap { font-size: 14px; color: var(--ink-2); margin: 0 0 6px; }
+  .chart { width: 100%; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 12px; }
+  .chip { font-size: 13px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--rule); background: var(--bg); color: var(--ink-2); }
+  .chip i { font-style: normal; color: var(--ink-3); }
+  .seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; margin: 0 0 14px; background: var(--surface); }
+  .seg button { font: 14px var(--sans); padding: 7px 13px; border: 0; background: none; color: var(--ink-2); cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--rule); }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: right; padding: 7px 8px; border-bottom: 1px solid var(--rule); }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-weight: 600; color: var(--ink-2); font-size: 13px; }
+  tr.final td { font-weight: 600; }
+  .scroll { overflow-x: auto; }
+  .demo { display: grid; grid-template-columns: minmax(220px, 300px) 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 760px) { .demo { grid-template-columns: 1fr; } }
+  label { display: block; font-size: 13px; color: var(--ink-2); margin: 0 0 4px; }
+  select { width: 100%; font: 16px var(--sans); padding: 9px 10px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); color: var(--ink); margin-bottom: 14px; }
+  .result .big { font: 600 34px/1.15 var(--serif); font-variant-numeric: tabular-nums; }
+  .bar { position: relative; height: 14px; background: #e9e6dd; border-radius: 7px; margin: 14px 0 6px; }
+  .bar span { position: absolute; top: 0; bottom: 0; border-radius: 7px; background: var(--hidden); }
+  .bar b { position: absolute; top: -5px; bottom: -5px; width: 2px; background: var(--ink); }
+  .barlab { display: flex; justify-content: space-between; font-size: 12px; color: var(--ink-3); }
+  ul.limits { padding-left: 20px; margin: 0; color: var(--ink-2); }
+  ul.limits li { margin-bottom: 8px; }
+  details { margin-top: 14px; }
+  summary { cursor: pointer; font-weight: 600; font-size: 15px; }
+  footer { padding: 36px 0 60px; border-top: 1px solid var(--rule); color: var(--ink-3); font-size: 14px; }
+  #err { display: none; background: #fff3f0; border: 1px solid #f0c4b8; padding: 14px 18px; border-radius: 8px; margin: 20px 0; }
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <b>Hidden Pay</b>
+  <a href="#who">Who hides pay</a><a href="#pay">Estimated pay</a><a href="#rent">Rent gap</a><a href="#demo">Try it</a><a href="#card">Model card</a>
+</div></nav>
+
+<div class="wrap">
+<div id="err">Could not load the data files. This page needs to be served over HTTP (for example GitHub Pages, or <code>python -m http.server</code> inside <code>site/</code>).</div>
+
+<header>
+  <p class="eyebrow">Datathon for Social Good · Bay Area job postings</p>
+  <h1><em id="h-share">–</em> of Bay Area job postings don't show what they pay.</h1>
+  <p class="lede">California's SB 1162 has required pay ranges in job postings since 2023. We looked at <span id="h-n">–</span> Bay Area postings on Indeed, trained models to estimate what the silent ones would pay, and checked that pay against local rent.</p>
+  <div class="tiles">
+    <div class="tile"><div class="num" id="t-hidden">–</div><div class="lab">Bay Area postings with no salary field</div></div>
+    <div class="tile"><div class="num" id="t-burden">–</div><div class="lab">of them would leave a worker rent-burdened on a local studio or one-bedroom, at estimated pay</div></div>
+    <div class="tile"><div class="num" id="t-food">–</div><div class="lab">for hidden-pay food service postings — nearly all of them</div></div>
+    <div class="tile"><div class="num" id="t-text">–</div><div class="lab">postings state pay in the description but leave the salary field empty</div></div>
+  </div>
+</header>
+
+<section id="who">
+  <h2>Who hides pay</h2>
+  <p class="sub">Food service and contract jobs leave pay off most often; healthcare least. A model that reads only the job title, job type, city and company picks out hidden-pay postings with an AUC of <b id="auc-nd">–</b>; adding the description (with all pay text removed) raises it to <b id="auc-full">–</b>. Guessing is 0.50.</p>
+  <div class="grid2">
+    <div class="card"><h3>Share of postings with no salary, by job family</h3><p class="cap">Held-out test postings, all of California</p><div id="c-fam" class="chart"></div></div>
+    <div class="card"><h3>Share of postings with no salary, by job type</h3><p class="cap">Held-out test postings, all of California</p><div id="c-type" class="chart"></div></div>
+  </div>
+  <div class="grid2" style="margin-top:20px">
+    <div class="card"><h3>Words that signal hidden pay</h3><p class="cap">Largest model weights towards "no salary". These read like postings written by hand or copied from an employer's own site.</p><div class="chips" id="sig-hide"></div></div>
+    <div class="card"><h3>Words that signal pay is shown</h3><p class="cap">Largest weights towards "salary shown". Several are footers of Indeed's own posting template, which has a pay field.</p><div class="chips" id="sig-show"></div></div>
+  </div>
+</section>
+
+<section id="pay">
+  <h2>What they are probably hiding</h2>
+  <p class="sub">A model trained on postings that do show pay estimates salary from the job title and description. On held-out postings it is off by <b id="mae-ridge">–</b> on average, against <b id="mae-base">–</b> for a look-up of the median salary for the same job title.</p>
+  <div class="card"><h3>Estimated pay of hidden-pay postings vs. actual pay of postings that show it</h3><p class="cap">Bay Area, share of postings in each $10,000 band. The last band includes everything above $310,000.</p><div id="c-hist" class="chart"></div>
+    <p class="note">Hidden-pay postings are estimated at a median of <span id="med-hidden">–</span>; postings that show pay have a median of <span id="med-shown">–</span>. The estimated distribution is smoother than the real one because a model's predictions cluster towards typical values.</p></div>
+  <div class="card" style="margin-top:20px"><h3>Salary model against its baseline, held-out test set</h3>
+    <div class="scroll"><table id="tb-sal"></table></div>
+    <p class="note">MAE = mean absolute error. R² is measured on log pay. The final model was chosen on the validation set, before the test set was touched.</p></div>
+</section>
+
+<section id="rent">
+  <h2>Does it cover rent?</h2>
+  <p class="sub">A posting counts as rent-burdened when a year of rent is more than 30% of its estimated <em>gross</em> annual pay. Rent is the median asking rent for a studio or one-bedroom in the same city, from Zillow listings.</p>
+  <div class="seg" id="scen" role="group" aria-label="Rent scenario">
+    <button data-k="burdened_city_1br" aria-pressed="true">City studio / 1BR</button>
+    <button data-k="burdened_county_1br" aria-pressed="false">County studio / 1BR</button>
+    <button data-k="burdened_city_2br" aria-pressed="false">City 2BR</button>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Rent-burdened share by job family</h3><p class="cap">Hidden-pay Bay Area postings · overall <b id="scen-all">–</b></p><div id="c-rfam" class="chart"></div></div>
+    <div class="card"><h3>Rent-burdened share by city</h3><p class="cap">The 15 cities with the most hidden-pay postings</p><div id="c-rcity" class="chart"></div></div>
+  </div>
+  <p class="note">For comparison, <span id="shown-b">–</span> of Bay Area postings that show pay are rent-burdened at their actual salaries. The model overstates burden slightly: on test postings with a real salary it gives <span id="chk-p">–</span> where the truth is <span id="chk-a">–</span>, so about half of the gap between hidden-pay and shown-pay postings could be model error.</p>
+</section>
+
+<section id="demo">
+  <h2>Try a job and a city</h2>
+  <p class="sub">Pick a job family and a city to see the range of estimated pay across hidden-pay postings there, and how much of it local rent would take.</p>
+  <div class="demo">
+    <div>
+      <label for="d-fam">Job family</label><select id="d-fam"></select>
+      <label for="d-city">City</label><select id="d-city"></select>
+      <p class="note" id="d-n"></p>
+    </div>
+    <div class="card result">
+      <p class="cap">Estimated annual pay, 10th to 90th percentile of postings</p>
+      <div class="big" id="d-range">–</div>
+      <div class="bar"><span id="d-span"></span><b id="d-need" title="Pay needed"></b></div>
+      <div class="barlab"><span>$20k</span><span id="d-needlab"></span><span>$300k</span></div>
+      <p style="margin:16px 0 4px"><b id="d-share">–</b> of gross pay goes to rent at the typical estimate (<span id="d-rent">–</span>/month for a studio or one-bedroom).</p>
+      <p class="note" id="d-burd"></p>
+      <p class="note">The range is the spread across postings in this group, not a confidence interval for one job. Groups with fewer than 10 hidden-pay postings are not shown.</p>
+    </div>
+  </div>
+</section>
+
+<section id="card">
+  <h2>Model card</h2>
+  <p class="sub">How the models were built and tested, where they are weak, and what the results do not show.</p>
+  <div class="grid2">
+    <div class="card"><h3>Hide-pay classifier, held-out test set</h3><div class="scroll"><table id="tb-clf"></table></div>
+      <p class="note">Logistic regression on TF-IDF of title and description (pay text removed), job type, city, company rating and review count. Split by company, 70/15/15.</p></div>
+    <div class="card"><h3>Is the salary model worse on postings likely to hide pay?</h3><p class="cap">Typical salary error by fifth of predicted probability of hiding pay</p><div id="c-prop" class="chart"></div>
+      <p class="note">Error rises mildly. On hidden-pay postings whose pay could be read from the description, R² on log pay is <span id="pit-r2">–</span> against <span id="test-r2">–</span> on the regular test set.</p></div>
+  </div>
+  <div class="card" style="margin-top:20px"><h3>Salary model by subgroup, held-out test set</h3>
+    <div class="scroll"><table id="tb-sub"></table></div>
+    <p class="note">Typical error = median absolute error as a share of actual pay. Bias above zero means the model over-predicts.</p>
+    <details><summary>The 20 worst misses</summary><div class="scroll"><table id="tb-fail"></table></div>
+      <p class="note">Many of these are errors in the posted salary, not the model. The genuine failures are specialist physicians.</p></details></div>
+  <div class="card" style="margin-top:20px; padding-bottom:20px"><h3 style="margin-bottom:10px">Limitations</h3><ul class="limits" id="limits"></ul></div>
+  <p class="note" id="data-note"></p>
+</section>
+
+<footer>Data: Indeed job postings (California) and Zillow listings (nine Bay Area counties), provided for the Datathon for Social Good. Only city- and county-level aggregates are shown. A missing salary field is not proof of a legal violation.</footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const pct = (x, d = 1) => (x * 100).toFixed(d) + "%";
+const usd = x => "$" + Math.round(x).toLocaleString("en-US");
+const usdk = x => "$" + Math.round(x / 1000) + "k";
+const num = x => x.toLocaleString("en-US");
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const HIDDEN = css("--hidden"), SHOWN = css("--shown"), INK2 = css("--ink-2"), RULE = css("--rule");
+const FONT = { family: css("--sans"), size: 13, color: INK2 };
+const CFG = { displayModeBar: false, responsive: true };
+
+function layout(extra) {
+  return Object.assign({
+    font: FONT, paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",
+    margin: { l: 110, r: 48, t: 6, b: 30 }, height: 300, showlegend: false, bargap: 0.35,
+    hoverlabel: { bgcolor: "#14130f", font: { color: "#fff", family: FONT.family, size: 13 }, bordercolor: "#14130f" },
+  }, extra);
+}
+// horizontal bars of a share, largest on top, value labelled at the bar end
+function hbar(id, rows, labelKey, valKey, hover, height) {
+  rows = [...rows].sort((a, b) => a[valKey] - b[valKey]);
+  Plotly.react(id, [{
+    type: "bar", orientation: "h", y: rows.map(r => cap(String(r[labelKey]))), x: rows.map(r => r[valKey]),
+    marker: { color: HIDDEN }, text: rows.map(r => pct(r[valKey], 0)), textposition: "outside", cliponaxis: false,
+    textfont: { color: css("--ink"), size: 13 }, customdata: rows.map(hover), hovertemplate: "%{customdata}<extra></extra>",
+  }], layout({
+    height: height || Math.max(220, rows.length * 30 + 50),
+    xaxis: { range: [0, Math.max(...rows.map(r => r[valKey])) > 0.5 ? 1.08 : 0.34], tickformat: ".0%", gridcolor: RULE, zeroline: false, fixedrange: true },
+    yaxis: { automargin: true, fixedrange: true, tickfont: { color: css("--ink") } },
+  }), CFG);
+}
+function table(id, head, rows, finalIdx) {
+  $(id).innerHTML = "<thead><tr>" + head.map(h => `<th>${h}</th>`).join("") + "</tr></thead><tbody>" +
+    rows.map((r, i) => `<tr${i === finalIdx ? ' class="final"' : ""}>` + r.map(c => `<td>${c}</td>`).join("") + "</tr>").join("") + "</tbody>";
+}
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+async function main() {
+  const names = ["headline", "who_hides", "hidden_pay", "rent", "model_card", "demo"];
+  const [H, W, P, R, M, D] = await Promise.all(names.map(n => fetch(`data/${n}.json`).then(r => { if (!r.ok) throw new Error(n); return r.json(); })));
+
+  // ---- headline
+  $("h-share").textContent = pct(H.bay_area_share_no_salary, 0);
+  $("h-n").textContent = num(H.postings_bay_area);
+  $("t-hidden").textContent = num(H.bay_area_no_salary);
+  $("t-burden").textContent = pct(H.hidden_burdened_city_1br, 0);
+  const food = R.by_family.find(f => f.job_family === "food service");
+  $("t-food").textContent = pct(food.burdened_city_1br, 0);
+  $("t-text").textContent = num(H.pay_in_text);
+
+  // ---- who hides
+  $("auc-nd").textContent = W.test.logistic_regression_no_description.auc.toFixed(2);
+  $("auc-full").textContent = W.test.logistic_regression.auc.toFixed(2);
+  const sub = dim => W.subgroups.filter(s => s.dimension === dim);
+  const hv = r => `<b>${cap(r.group)}</b><br>${pct(r.share_hiding)} of ${num(r.n)} test postings have no salary<br>Classifier AUC ${r.auc.toFixed(2)}`;
+  hbar("c-fam", sub("job_family"), "group", "share_hiding", hv);
+  hbar("c-type", sub("job_type_main").map(r => ({ ...r, group: r.group === "missing" ? "Not stated" : r.group })), "group", "share_hiding", hv, 260);
+  const chips = (id, dir) => $(id).innerHTML = W.top_signals.filter(s => s.direction === dir).slice(0, 18)
+    .map(s => { const [k, v] = s.feature.split(/: (.*)/); return `<span class="chip"><i>${esc(v ? k : "")}</i> ${esc(v || k)}</span>`; }).join("");
+  chips("sig-hide", "hides pay"); chips("sig-show", "shows pay");
+
+  // ---- estimated pay
+  $("mae-ridge").textContent = usd(P.test.ridge.mae_dollars);
+  $("mae-base").textContent = usd(P.test.baseline_title_median.mae_dollars);
+  $("med-hidden").textContent = usd(H.hidden_median_predicted_pay);
+  $("med-shown").textContent = usd(H.shown_median_actual_pay);
+  const hx = P.histogram.bin_start.map(b => b + 5000);
+  const band = b => `${usdk(b - 5000)}–${usdk(b + 5000)}`;
+  const line = (name, y, color, dash) => ({ type: "scatter", mode: "lines", name, x: hx, y, line: { color, width: 2, shape: "spline", smoothing: 0.5, dash },
+    customdata: hx.map(band), hovertemplate: `<b>${name}</b><br>%{customdata}: %{y:.1%} of postings<extra></extra>` });
+  Plotly.react("c-hist", [
+    line("Hidden pay (estimated)", P.histogram.hidden_predicted, HIDDEN),
+    line("Pay shown (actual)", P.histogram.shown_actual, SHOWN),
+  ], layout({ height: 340, showlegend: true, legend: { orientation: "h", y: 1.12, x: 0 }, margin: { l: 52, r: 16, t: 30, b: 44 }, hovermode: "x unified",
+    xaxis: { tickprefix: "$", tickformat: "~s", gridcolor: RULE, title: { text: "Annual pay", font: { size: 13 } }, fixedrange: true },
+    yaxis: { tickformat: ".0%", gridcolor: RULE, rangemode: "tozero", fixedrange: true } }), CFG);
+  const salRows = [["Median by job title (baseline)", "baseline_title_median"], ["TF-IDF + Ridge", "ridge"], ["LightGBM", "lightgbm"]];
+  table("tb-sal", ["Model", "MAE, all CA", "R², all CA", "MAE, Bay Area", "R², Bay Area"],
+    salRows.map(([n, k]) => [n + (k === P.final_model ? " · final" : ""), usd(P.test[k].mae_dollars), P.test[k].r2_log.toFixed(2), usd(P.test_bay_area[k].mae_dollars), P.test_bay_area[k].r2_log.toFixed(2)]),
+    salRows.findIndex(r => r[1] === P.final_model));
+
+  // ---- rent
+  const S = R.summary;
+  $("shown-b").textContent = pct(S.shown_pay_bay_area_actual_salary.burdened_city_1br);
+  $("chk-p").textContent = pct(S.model_check_on_test_postings_with_salary.burdened_using_predicted_pay);
+  $("chk-a").textContent = pct(S.model_check_on_test_postings_with_salary.burdened_using_actual_pay);
+  const cities = [...R.by_city].sort((a, b) => b.n - a.n).slice(0, 15);
+  function drawRent(k) {
+    $("scen-all").textContent = pct(S.hidden_pay_bay_area[k]);
+    hbar("c-rfam", R.by_family, "job_family", k, r => `<b>${cap(r.job_family)}</b><br>${pct(r[k])} of ${num(r.n)} hidden-pay postings rent-burdened<br>Median estimated pay ${usd(r.median_predicted_pay)}`);
+    hbar("c-rcity", cities, "city", k, r => `<b>${r.city}</b><br>${pct(r[k])} of ${num(r.n)} hidden-pay postings rent-burdened<br>Studio/1BR rent ${usd(r.rent)}/month · needs ${usd(r.pay_needed)} gross<br>Median estimated pay ${usd(r.median_predicted_pay)}`, 480);
+  }
+  drawRent("burdened_city_1br");
+  $("scen").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return;
+    $("scen").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); drawRent(b.dataset.k); });
+
+  // ---- demo
+  const fams = [...new Set(D.cells.map(c => c.job_family))];
+  const order = ["food service", "retail", "warehouse", "education", "healthcare", "tech", "other"].filter(f => fams.includes(f));
+  $("d-fam").innerHTML = order.map(f => `<option value="${f}">${cap(f)}</option>`).join("");
+  const pos = v => Math.max(0, Math.min(100, (v - 20000) / 2800));
+  function fillCities() {
+    const cs = D.cells.filter(c => c.job_family === $("d-fam").value);
+    $("d-city").innerHTML = cs.map(c => `<option>${c.city}</option>`).join(""); showCell();
+  }
+  function showCell() {
+    const c = D.cells.find(c => c.job_family === $("d-fam").value && c.city === $("d-city").value); if (!c) return;
+    const need = c.monthly_rent * 12 / 0.3;
+    $("d-range").textContent = `${usd(c.pay_p10)} – ${usd(c.pay_p90)}`;
+    $("d-span").style.left = pos(c.pay_p10) + "%"; $("d-span").style.width = Math.max(1, pos(c.pay_p90) - pos(c.pay_p10)) + "%";
+    $("d-need").style.left = pos(need) + "%"; $("d-needlab").textContent = `│ ${usd(need)} needed for rent to be 30%`;
+    $("d-share").textContent = pct(c.rent_share_at_p50, 0); $("d-rent").textContent = usd(c.monthly_rent);
+    $("d-burd").textContent = `${pct(c.share_burdened, 0)} of these postings are rent-burdened. Typical estimate ${usd(c.pay_p50)}; rent is ${c.rent_source === "county median" ? "the county median" : "the city median asking rent"}.`;
+    $("d-n").textContent = `${num(c.n_postings)} hidden-pay postings in this group.`;
+  }
+  $("d-fam").addEventListener("change", fillCities); $("d-city").addEventListener("change", showCell); fillCities();
+
+  // ---- model card
+  const C = M.classifier.test, CB = M.classifier.test_bay_area;
+  const clfRows = [["Majority-class baseline", "baseline_majority"], ["Logistic regression, no description", "logistic_regression_no_description"], ["Logistic regression", "logistic_regression"]];
+  table("tb-clf", ["Model", "AUC", "Precision", "Recall", "Macro-F1", "AUC, Bay Area"],
+    clfRows.map(([n, k]) => [n, C[k].auc.toFixed(2), C[k].precision.toFixed(2), C[k].recall.toFixed(2), C[k].macro_f1.toFixed(2), CB[k].auc.toFixed(2)]), 2);
+  const q = M.salary_error_by_propensity;
+  Plotly.react("c-prop", [{ type: "bar", x: q.map(r => ["Least likely", "2", "3", "4", "Most likely"][r.propensity_quintile - 1]), y: q.map(r => r.median_abs_pct_err),
+    marker: { color: HIDDEN }, text: q.map(r => pct(r.median_abs_pct_err)), textposition: "outside", cliponaxis: false, textfont: { color: css("--ink") },
+    customdata: q.map(r => `Typical error ${pct(r.median_abs_pct_err)} · MAE ${usd(r.mae_dollars)}<br>R² (log) ${r.r2_log.toFixed(2)} · ${num(r.n)} postings`), hovertemplate: "%{customdata}<extra></extra>" }],
+    layout({ height: 250, margin: { l: 44, r: 10, t: 16, b: 50 }, bargap: 0.4,
+      xaxis: { type: "category", title: { text: "Predicted probability of hiding pay, by fifth", font: { size: 13 } }, fixedrange: true },
+      yaxis: { tickformat: ".0%", range: [0, 0.2], gridcolor: RULE, fixedrange: true } }), CFG);
+  $("pit-r2").textContent = M.salary_model.hidden_pay_in_text_test_companies[P.final_model].r2_log.toFixed(2);
+  $("test-r2").textContent = M.salary_model.test[P.final_model].r2_log.toFixed(2);
+  const dimName = { all: "", region: "Region", job_family: "Job family", job_type_main: "Job type", city: "City" };
+  table("tb-sub", ["Group", "", "Postings", "Median pay", "MAE", "Baseline MAE", "Typical error", "Bias", "R² (log)"],
+    M.salary_subgroups.map(r => [esc(cap(r.group === "missing" ? "Not stated" : r.group)), dimName[r.dimension], num(r.n), usd(r.median_salary), usd(r.mae_dollars), usd(r.baseline_mae_dollars),
+      pct(r.median_abs_pct_err), (r.mean_pct_bias > 0 ? "+" : "") + pct(r.mean_pct_bias), r.r2_log.toFixed(2)]));
+  table("tb-fail", ["Job title", "City", "Posted pay", "Predicted"], M.failures.map(f => [esc(f.job_title), esc(f.city), usd(f.actual_salary), usd(f.predicted_salary)]));
+  $("limits").innerHTML = M.limitations.map(l => `<li>${esc(l)}</li>`).join("");
+  const d = M.data;
+  $("data-note").textContent = `Data: ${num(d.rows_raw)} raw postings, ${num(d.rows_after_dedupe)} after removing duplicates; ${num(d.salary_usable_for_model)} with a usable salary. ` +
+    `Train / validation / test: ${num(d.split_rows.train)} / ${num(d.split_rows.val)} / ${num(d.split_rows.test)} postings, split by company so no employer appears in two sets.`;
+}
+main().catch(e => { console.error(e); $("err").style.display = "block"; });
+</script>
+</body>
+</html>
