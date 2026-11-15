@@ -2,6 +2,8 @@
 
 **Datathon for Social Good — Advanced Track**
 
+**Live site:** https://taitohold.github.io/hidden-pay/
+
 California's SB 1162 has required pay ranges in job postings since 2023. We ask two questions of Bay Area job postings:
 
 1. **Who hides pay?** Which postings omit salary, and what predicts it?
@@ -60,6 +62,20 @@ Or run one step at a time, in order:
 ```
 
 Files in `data/raw/` are never modified. Outputs go to `data/processed/` (intermediate), `reports/` (every reported number), and `site/data/` (JSON for the website).
+
+## Website
+
+`site/` is a static page that reads the JSON in `site/data/`. It is served by GitHub Pages from the `gh-pages` branch. To preview locally:
+
+```bash
+python3 -m http.server 8765 --directory site
+```
+
+To publish changes after committing them on `main`:
+
+```bash
+git subtree push --prefix site origin gh-pages
+```
 
 ## Pipeline
 
